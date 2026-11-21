@@ -1,0 +1,19 @@
+id: finevision-hp
+name: FineVision HP
+company: Beaver-Visitec International (BVI)
+group: fixed
+type: Trifocal
+stage: approved-us
+status: approved
+availability: US now
+latest:
+  date: 2025-09-10
+  text: The FDA approved the lens.
+  evidence: regulator
+trials: [NCT04176965]
+fda:
+  - {pma: P240038, date: 2025-09-10}
+sources:
+  - {url: "https://api.fda.gov/device/pma.json?search=pma_number%3AP240038+AND+supplement_number%3A%22%22", read: 2026-11-21}
+  - {url: "https://clinicaltrials.gov/study/NCT04176965", read: 2026-11-21}
+reviewed: 2026-11-21

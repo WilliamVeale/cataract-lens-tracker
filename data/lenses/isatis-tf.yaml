@@ -1,0 +1,16 @@
+id: isatis-tf
+name: Isatis TF
+company: Cutting Edge
+group: fixed
+type: Trifocal
+stage: early
+status: active
+availability: Unknown
+latest:
+  date: 2024-06-27
+  text: The trial in Czechia and Spain finished.
+  evidence: company
+trials: [NCT04465344]
+sources:
+  - {url: "https://clinicaltrials.gov/study/NCT04465344", read: 2026-11-21}
+reviewed: 2026-11-21

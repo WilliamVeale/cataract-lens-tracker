@@ -1,0 +1,22 @@
+id: rayone-emv
+name: RayOne EMV
+code_names: [RAO200E, RAO210T]
+company: Rayner
+group: fixed
+type: Monofocal plus
+stage: approved-us
+status: approved
+availability: US now
+latest:
+  date: 2025-10-09
+  text: The FDA approved the toric model, RayOne EMV Toric.
+  evidence: regulator
+trials: [NCT05985304]
+fda:
+  - {pma: P060011, supplement: S025, date: 2021-03-26}
+  - {pma: P060011, supplement: S039, date: 2025-10-09}
+sources:
+  - {url: "https://api.fda.gov/device/pma.json?search=pma_number%3AP060011+AND+supplement_number%3AS025", read: 2026-11-21}
+  - {url: "https://api.fda.gov/device/pma.json?search=pma_number%3AP060011+AND+supplement_number%3AS039", read: 2026-11-21}
+  - {url: "https://clinicaltrials.gov/study/NCT05985304", read: 2026-11-21}
+reviewed: 2026-11-21

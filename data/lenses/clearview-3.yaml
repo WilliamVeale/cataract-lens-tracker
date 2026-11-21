@@ -1,0 +1,20 @@
+id: clearview-3
+name: ClearView 3
+code_names: [SBL-3]
+company: Lenstec
+group: fixed
+type: Multifocal (bifocal)
+stage: approved-us
+status: approved
+availability: US now
+latest:
+  date: 2023-02-17
+  text: The FDA approved the new name, ClearView 3. The old name was SBL-3.
+  evidence: regulator
+fda:
+  - {pma: P200020, date: 2022-07-22}
+  - {pma: P200020, supplement: S003, date: 2023-02-17}
+sources:
+  - {url: "https://api.fda.gov/device/pma.json?search=pma_number%3AP200020+AND+supplement_number%3A%22%22", read: 2026-11-21}
+  - {url: "https://api.fda.gov/device/pma.json?search=pma_number%3AP200020+AND+supplement_number%3AS003", read: 2026-11-21}
+reviewed: 2026-11-21

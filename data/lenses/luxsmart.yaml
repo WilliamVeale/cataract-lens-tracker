@@ -1,0 +1,16 @@
+id: luxsmart
+name: LuxSmart
+company: Cutting Edge
+group: fixed
+type: Monofocal plus
+stage: early
+status: stalled
+availability: Unknown
+latest:
+  date: 2025-02-12
+  text: Last update of the trial record. It still says active, after its planned end in April 2025.
+  evidence: company
+trials: [NCT06105190]
+sources:
+  - {url: "https://clinicaltrials.gov/study/NCT06105190", read: 2026-11-21}
+reviewed: 2026-11-21

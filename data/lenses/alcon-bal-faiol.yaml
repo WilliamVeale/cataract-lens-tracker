@@ -1,0 +1,17 @@
+id: alcon-bal-faiol
+name: BAL-FAIOL
+code_names: [BAL-FAIOL]
+company: Alcon
+group: changes
+type: Accommodating
+stage: early
+status: active
+availability: Unknown
+latest:
+  date: 2026-09-01
+  text: The trial record says the trial is active and takes no new people.
+  evidence: company
+trials: [NCT05317728]
+sources:
+  - {url: "https://clinicaltrials.gov/study/NCT05317728", read: 2026-11-21}
+reviewed: 2026-11-21

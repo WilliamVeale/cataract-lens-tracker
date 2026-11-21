@@ -1,0 +1,23 @@
+id: tecnis-odyssey
+name: TECNIS Odyssey
+code_names: [DRN00V]
+company: Johnson & Johnson Surgical Vision
+group: fixed
+type: Multifocal
+stage: approved-us
+status: approved
+availability: US now
+latest:
+  date: 2023-12-22
+  text: The FDA approved the toric model, TECNIS Odyssey Toric II.
+  evidence: regulator
+trials: [NCT07768475]
+fda:
+  - {pma: P980040, supplement: S156, date: 2023-05-23}
+  - {pma: P980040, supplement: S159, date: 2023-12-22}
+sources:
+  - {url: "https://api.fda.gov/device/pma.json?search=pma_number%3AP980040+AND+supplement_number%3AS156", read: 2026-11-21}
+  - {url: "https://api.fda.gov/device/pma.json?search=pma_number%3AP980040+AND+supplement_number%3AS159", read: 2026-11-21}
+  - {url: "https://clinicaltrials.gov/study/NCT07768475", read: 2026-11-21}
+  - {url: "https://api.fda.gov/device/pma.json?search=pma_number%3AP980040+AND+supplement_number%3AS174", read: 2026-11-21}
+reviewed: 2026-11-21

@@ -1,0 +1,21 @@
+id: clareon-panoptix
+name: Clareon PanOptix
+code_names: [CNWTT0, CNATT0]
+company: Alcon
+group: fixed
+type: Trifocal
+stage: approved-us
+status: approved
+availability: US now
+latest:
+  date: 2020-07-20
+  text: The FDA approved the lens, also preloaded in the AutonoMe injector.
+  evidence: regulator
+trials: [NCT05796453, NCT07768475]
+fda:
+  - {pma: P190018, supplement: S002, date: 2020-07-20}
+sources:
+  - {url: "https://api.fda.gov/device/pma.json?search=pma_number%3AP190018+AND+supplement_number%3AS002", read: 2026-11-21}
+  - {url: "https://clinicaltrials.gov/study/NCT05796453", read: 2026-11-21}
+  - {url: "https://clinicaltrials.gov/study/NCT07768475", read: 2026-11-21}
+reviewed: 2026-11-21

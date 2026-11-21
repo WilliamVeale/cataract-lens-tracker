@@ -1,0 +1,18 @@
+id: acrysof-iq-vivity
+name: AcrySof IQ Vivity
+code_names: [DFT015]
+company: Alcon
+group: fixed
+type: EDOF
+stage: approved-us
+status: approved
+availability: US now
+latest:
+  date: 2020-02-26
+  text: The FDA approved the lens and its toric models.
+  evidence: regulator
+fda:
+  - {pma: P930014, supplement: S126, date: 2020-02-26}
+sources:
+  - {url: "https://api.fda.gov/device/pma.json?search=pma_number%3AP930014+AND+supplement_number%3AS126", read: 2026-11-21}
+reviewed: 2026-11-21

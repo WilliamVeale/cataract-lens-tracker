@@ -1,0 +1,17 @@
+id: at-elana-841p
+name: AT ELANA 841P
+company: Carl Zeiss Meditec
+group: fixed
+type: Trifocal
+stage: pivotal
+status: active
+availability: Unknown
+latest:
+  date: 2025-12-01
+  text: The US trial finished.
+  evidence: company
+trials: [NCT06264232, NCT06111222]
+sources:
+  - {url: "https://clinicaltrials.gov/study/NCT06264232", read: 2026-11-21}
+  - {url: "https://clinicaltrials.gov/study/NCT06111222", read: 2026-11-21}
+reviewed: 2026-11-21

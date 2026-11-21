@@ -1,0 +1,19 @@
+id: clareon-vivity-pro
+name: Clareon Vivity Pro
+company: Alcon
+group: fixed
+type: EDOF
+stage: approved-us
+status: approved
+availability: US now
+latest:
+  date: 2026-10-30
+  text: The FDA approved the lens and its toric models.
+  evidence: regulator
+trials: [NCT07484191]
+fda:
+  - {pma: P190018, supplement: S050, date: 2026-10-30}
+sources:
+  - {url: "https://api.fda.gov/device/pma.json?search=pma_number%3AP190018+AND+supplement_number%3AS050", read: 2026-11-21}
+  - {url: "https://clinicaltrials.gov/study/NCT07484191", read: 2026-11-21}
+reviewed: 2026-11-21

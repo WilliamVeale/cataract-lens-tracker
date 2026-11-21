@@ -1,0 +1,16 @@
+id: perfect-lens-perfector
+name: Perfector
+company: Perfect Lens
+group: changes
+type: Laser adjustment of an implanted lens
+stage: early
+status: active
+availability: Unknown
+latest:
+  date: 2024-11-12
+  text: The trial in Czechia finished.
+  evidence: company
+trials: [NCT07384182]
+sources:
+  - {url: "https://clinicaltrials.gov/study/NCT07384182", read: 2026-11-21}
+reviewed: 2026-11-21

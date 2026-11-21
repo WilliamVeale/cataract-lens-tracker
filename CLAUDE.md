@@ -10,8 +10,29 @@ the task needs, not all of it.
 
 ## Status (2026-11-21)
 
-Step 3 is done: the four build checks and the weekly refresh.
-Next: the YAML data (step 4). The page comes last (step 5).
+Step 3 is done: the four build checks and the weekly refresh (PR #1).
+Step 4 facts are done: 41 files in `data/lenses/`, and every refresh hit
+is in a file or in `data/ignore.yaml`. All facts were read 2026-11-21.
+Next: a person writes `how_it_works`, `summary` and `trade_offs` (all
+empty now). The page comes last (step 5).
+
+How the refresh hits were sorted. Use the same rules for new hits:
+
+- Out: plain monofocal and toric lenses. The page covers them in "What
+  surgeons use today". Monofocal plus, EDOF and up are in. (Owner's
+  choice, 2026-11-21.)
+- Out: lenses sold only outside the US (spec, open question 3). Trial
+  lenses anywhere are in.
+- Out: older lenses we do not track (AcrySof IQ PanOptix, TECNIS
+  Symfony, TECNIS ZMT, Trulign), phakic lenses, add-on lenses for an eye
+  that already had surgery, and withdrawn trials.
+- `fda` lists only an approval of a lens, a model (toric too) or a new
+  name. Power ranges, packaging, injectors, shelf life, software and
+  label text go in `data/ignore.yaml`.
+- Stage: `pivotal` is Phase 3, or a US trial of 150 or more people that
+  tests safety and effectiveness. Other trials are `early`.
+- A fact from a trial record has `evidence: company`: the sponsor
+  writes the record. Its source link is the study page.
 
 ## Commands
 

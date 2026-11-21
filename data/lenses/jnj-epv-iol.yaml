@@ -1,0 +1,17 @@
+id: jnj-epv-iol
+name: EPV IOL
+code_names: [C0001, C0002]
+company: Johnson & Johnson Surgical Vision
+group: fixed
+stage: early
+status: active
+availability: Unknown
+latest:
+  date: 2025-05-20
+  text: The second small trial in France finished.
+  evidence: company
+trials: [NCT05036070, NCT05531292]
+sources:
+  - {url: "https://clinicaltrials.gov/study/NCT05036070", read: 2026-11-21}
+  - {url: "https://clinicaltrials.gov/study/NCT05531292", read: 2026-11-21}
+reviewed: 2026-11-21

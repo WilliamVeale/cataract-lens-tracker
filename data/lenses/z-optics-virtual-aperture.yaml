@@ -1,0 +1,17 @@
+id: z-optics-virtual-aperture
+name: Z+ Virtual Aperture Optic IOL
+code_names: [FG-80030.1]
+company: Z Optics
+group: fixed
+type: EDOF
+stage: early
+status: active
+availability: Unknown
+latest:
+  date: 2025-08-07
+  text: The trial started in Portugal, Spain and Switzerland.
+  evidence: company
+trials: [NCT05955846]
+sources:
+  - {url: "https://clinicaltrials.gov/study/NCT05955846", read: 2026-11-21}
+reviewed: 2026-11-21

@@ -1,0 +1,16 @@
+id: luxboost
+name: LuxBoost
+company: Cutting Edge
+group: fixed
+type: Monofocal plus
+stage: early
+status: active
+availability: Unknown
+latest:
+  date: 2024-10-14
+  text: The trial in France started.
+  evidence: company
+trials: [NCT06258707]
+sources:
+  - {url: "https://clinicaltrials.gov/study/NCT06258707", read: 2026-11-21}
+reviewed: 2026-11-21

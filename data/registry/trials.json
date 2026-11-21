@@ -1,0 +1,823 @@
+{
+  "NCT04176965": {
+    "title": "Investigation of the Safety and Effectiveness of a Trifocal IOL",
+    "status": "COMPLETED",
+    "sponsor": "Beaver-Visitec International, Inc.",
+    "phases": [
+      "NA"
+    ],
+    "start_date": "2022-04-28",
+    "primary_completion_date": "2024-05-13",
+    "completion_date": "2024-05-13",
+    "enrollment": 539,
+    "enrollment_type": "ACTUAL",
+    "countries": [
+      "United States"
+    ]
+  },
+  "NCT04465344": {
+    "title": "Multicentric Clinical Study on Isatis TF Trifocal Intraocular Lens",
+    "status": "COMPLETED",
+    "sponsor": "Cutting Edge SAS",
+    "phases": [
+      "NA"
+    ],
+    "start_date": "2021-05-31",
+    "primary_completion_date": "2024-06-27",
+    "completion_date": "2024-06-27",
+    "enrollment": 188,
+    "enrollment_type": "ACTUAL",
+    "countries": [
+      "Czechia",
+      "Spain"
+    ]
+  },
+  "NCT04574115": {
+    "title": "Clinical Investigation of Omega Refractive Capsule, Model VI",
+    "status": "UNKNOWN",
+    "sponsor": "Omega Ophthalmics",
+    "phases": [
+      "NA"
+    ],
+    "start_date": "2021-02-06",
+    "primary_completion_date": "2024-06",
+    "completion_date": "2024-06",
+    "enrollment": 30,
+    "enrollment_type": "ACTUAL",
+    "countries": [
+      "Costa Rica"
+    ]
+  },
+  "NCT04756908": {
+    "title": "Safety and Effectiveness of the Opira AIOL in Comparison to Commercial IOLs in Patients Undergoing Cataract Surgery",
+    "status": "UNKNOWN",
+    "sponsor": "FSV6, Ltd.",
+    "phases": [
+      "NA"
+    ],
+    "start_date": "2020-10-08",
+    "primary_completion_date": "2024-01",
+    "completion_date": "2024-06",
+    "enrollment": 200,
+    "enrollment_type": "ESTIMATED",
+    "countries": [
+      "Costa Rica",
+      "Mexico"
+    ]
+  },
+  "NCT04890249": {
+    "title": "Clinical Investigation of Two Tecnis Investigational Lenses",
+    "status": "COMPLETED",
+    "sponsor": "Johnson & Johnson Surgical Vision, Inc.",
+    "phases": [
+      "NA"
+    ],
+    "start_date": "2021-06-23",
+    "primary_completion_date": "2023-01-31",
+    "completion_date": "2023-01-31",
+    "enrollment": 221,
+    "enrollment_type": "ACTUAL",
+    "countries": [
+      "Australia",
+      "New Zealand"
+    ]
+  },
+  "NCT05025345": {
+    "title": "Vision Performance Evaluation of TECNIS EYHANCE™ With TECNIS SIMPLICITY™ Compared to TECNIS® 1-piece Intraocular Lenses",
+    "status": "COMPLETED",
+    "sponsor": "Johnson & Johnson Surgical Vision, Inc.",
+    "phases": [
+      "NA"
+    ],
+    "start_date": "2021-09-02",
+    "primary_completion_date": "2022-06-17",
+    "completion_date": "2022-06-17",
+    "enrollment": 228,
+    "enrollment_type": "ACTUAL",
+    "countries": [
+      "United States"
+    ]
+  },
+  "NCT05026632": {
+    "title": "NPI-002 Intravitreal Implant for the Delay of Cataract Progression",
+    "status": "COMPLETED",
+    "sponsor": "Nacuity Pharmaceuticals, Inc.",
+    "phases": [
+      "PHASE1",
+      "PHASE2"
+    ],
+    "start_date": "2022-01-27",
+    "primary_completion_date": "2026-09-03",
+    "completion_date": "2026-09-03",
+    "enrollment": 24,
+    "enrollment_type": "ACTUAL",
+    "countries": [
+      "Australia"
+    ]
+  },
+  "NCT05036070": {
+    "title": "Proof-of-concept Study for a New Intraocular Lens, MODEL C0001",
+    "status": "COMPLETED",
+    "sponsor": "Johnson & Johnson Surgical Vision, Inc.",
+    "phases": [
+      "NA"
+    ],
+    "start_date": "2021-11-18",
+    "primary_completion_date": "2024-04-24",
+    "completion_date": "2024-04-24",
+    "enrollment": 113,
+    "enrollment_type": "ACTUAL",
+    "countries": [
+      "France"
+    ]
+  },
+  "NCT05090813": {
+    "title": "A Real-World Study in China for the TECNIS Eyhance™ Intraocular Lens",
+    "status": "COMPLETED",
+    "sponsor": "Johnson & Johnson Surgical Vision, Inc.",
+    "phases": [
+      "NA"
+    ],
+    "start_date": "2021-12-24",
+    "primary_completion_date": "2024-04-22",
+    "completion_date": "2024-04-22",
+    "enrollment": 24,
+    "enrollment_type": "ACTUAL",
+    "countries": [
+      "China"
+    ]
+  },
+  "NCT05090826": {
+    "title": "A Real-World Study for the TECNIS Synergy™ Intraocular Lens",
+    "status": "COMPLETED",
+    "sponsor": "Johnson & Johnson Surgical Vision, Inc.",
+    "phases": [
+      "NA"
+    ],
+    "start_date": "2021-12-28",
+    "primary_completion_date": "2024-04-30",
+    "completion_date": "2024-04-30",
+    "enrollment": 42,
+    "enrollment_type": "ACTUAL",
+    "countries": [
+      "China"
+    ]
+  },
+  "NCT05202808": {
+    "title": "RxSight Light Adjustable Lens and Light Delivery Device New Enrollment Study",
+    "status": "COMPLETED",
+    "sponsor": "RxSight, Inc.",
+    "phases": [
+      "NA"
+    ],
+    "start_date": "2021-12-03",
+    "primary_completion_date": "2024-09-11",
+    "completion_date": "2024-12-16",
+    "enrollment": 500,
+    "enrollment_type": "ACTUAL",
+    "countries": [
+      "United States"
+    ]
+  },
+  "NCT05317728": {
+    "title": "Clinical Study of a Fluid Accommodating Intraocular Lens (IOL) Design",
+    "status": "ACTIVE_NOT_RECRUITING",
+    "sponsor": "Alcon Research",
+    "phases": [
+      "NA"
+    ],
+    "start_date": "2023-03-31",
+    "primary_completion_date": "2026-11",
+    "completion_date": "2026-11",
+    "enrollment": 175,
+    "enrollment_type": "ACTUAL",
+    "countries": [
+      "Costa Rica",
+      "Dominican Republic",
+      "Mexico",
+      "Panama"
+    ]
+  },
+  "NCT05364983": {
+    "title": "Clinical Study to Evaluate the LensGen® Juvene® Intraocular Lens",
+    "status": "NOT_YET_RECRUITING",
+    "sponsor": "LensGen, Inc.",
+    "phases": [
+      "NA"
+    ],
+    "start_date": "2023-05",
+    "primary_completion_date": "2024-11",
+    "completion_date": "2026-11",
+    "enrollment": 56,
+    "enrollment_type": "ESTIMATED",
+    "countries": []
+  },
+  "NCT05396599": {
+    "title": "A Clinical Study Comparing Postoperative Outcomes Between the TECNIS Intraocular Lens.",
+    "status": "TERMINATED",
+    "sponsor": "Johnson & Johnson Surgical Vision, Inc.",
+    "phases": [
+      "NA"
+    ],
+    "start_date": "2022-06-30",
+    "primary_completion_date": "2023-04-07",
+    "completion_date": "2023-04-07",
+    "enrollment": 35,
+    "enrollment_type": "ACTUAL",
+    "countries": [
+      "United States"
+    ]
+  },
+  "NCT05438732": {
+    "title": "Multicenter Clinical Study of the SING-IMT in Patients with Late-stage AMD",
+    "status": "RECRUITING",
+    "sponsor": "VisionCare, Inc.",
+    "phases": [
+      "NA"
+    ],
+    "start_date": "2022-06-16",
+    "primary_completion_date": "2025-12",
+    "completion_date": "2025-12",
+    "enrollment": 125,
+    "enrollment_type": "ESTIMATED",
+    "countries": [
+      "United States"
+    ]
+  },
+  "NCT05481125": {
+    "title": "Clareon Toric vs Eyhance Toric",
+    "status": "COMPLETED",
+    "sponsor": "Alcon Research",
+    "phases": [
+      "NA"
+    ],
+    "start_date": "2022-10-10",
+    "primary_completion_date": "2023-10-16",
+    "completion_date": "2023-10-16",
+    "enrollment": 203,
+    "enrollment_type": "ACTUAL",
+    "countries": [
+      "United States"
+    ]
+  },
+  "NCT05531292": {
+    "title": "PROOF-OF-CONCEPT STUDY FOR NEW INTRAOCULAR LENS, MODEL C0002",
+    "status": "COMPLETED",
+    "sponsor": "Johnson & Johnson Surgical Vision, Inc.",
+    "phases": [
+      "NA"
+    ],
+    "start_date": "2022-11-22",
+    "primary_completion_date": "2025-05-20",
+    "completion_date": "2025-05-20",
+    "enrollment": 106,
+    "enrollment_type": "ACTUAL",
+    "countries": [
+      "France"
+    ]
+  },
+  "NCT05574270": {
+    "title": "Clinical Investigation of a Small Aperture Extended Depth of Focus Intraocular Lens in Patients With Complex Corneas",
+    "status": "COMPLETED",
+    "sponsor": "AcuFocus, Inc.",
+    "phases": [
+      "NA"
+    ],
+    "start_date": "2022-07-12",
+    "primary_completion_date": "2024-11-28",
+    "completion_date": "2024-11-28",
+    "enrollment": 45,
+    "enrollment_type": "ACTUAL",
+    "countries": [
+      "Philippines",
+      "Singapore"
+    ]
+  },
+  "NCT05574959": {
+    "title": "Clinical Investigation of the TECNIS® Next-Generation Intraocular Lens, Model DEN00V",
+    "status": "TERMINATED",
+    "sponsor": "Johnson & Johnson Surgical Vision, Inc.",
+    "phases": [
+      "NA"
+    ],
+    "start_date": "2022-10-24",
+    "primary_completion_date": "2023-10-24",
+    "completion_date": "2023-10-24",
+    "enrollment": 243,
+    "enrollment_type": "ACTUAL",
+    "countries": [
+      "United States"
+    ]
+  },
+  "NCT05796453": {
+    "title": "Post Market Clinical Follow-up (PMCF) Study of Clareon Vivity & Clareon PanOptix",
+    "status": "COMPLETED",
+    "sponsor": "Alcon Research",
+    "phases": [
+      "NA"
+    ],
+    "start_date": "2023-09-19",
+    "primary_completion_date": "2026-08-21",
+    "completion_date": "2026-08-21",
+    "enrollment": 470,
+    "enrollment_type": "ACTUAL",
+    "countries": [
+      "Puerto Rico",
+      "United States"
+    ]
+  },
+  "NCT05852470": {
+    "title": "Evaluation of Clareon Vivity/Vivity Toric",
+    "status": "COMPLETED",
+    "sponsor": "Alcon Research",
+    "phases": [
+      "NA"
+    ],
+    "start_date": "2023-05-23",
+    "primary_completion_date": "2023-10-27",
+    "completion_date": "2023-10-27",
+    "enrollment": 155,
+    "enrollment_type": "ACTUAL",
+    "countries": [
+      "United States"
+    ]
+  },
+  "NCT05955846": {
+    "title": "Evaluation of Safety and Effectiveness of an IOL With a Virtual Aperture Optic",
+    "status": "RECRUITING",
+    "sponsor": "Z Optics, Inc.",
+    "phases": [
+      "NA"
+    ],
+    "start_date": "2025-08-07",
+    "primary_completion_date": "2027-08",
+    "completion_date": "2027-09",
+    "enrollment": 60,
+    "enrollment_type": "ESTIMATED",
+    "countries": [
+      "Portugal",
+      "Spain",
+      "Switzerland"
+    ]
+  },
+  "NCT05985304": {
+    "title": "Clinical Trial of a Hydrophilic EMV Toric Lens RAO210T in the Correction of Aphakia and Corneal Astigmatism",
+    "status": "COMPLETED",
+    "sponsor": "Rayner Intraocular Lenses Limited",
+    "phases": [
+      "NA"
+    ],
+    "start_date": "2023-08-10",
+    "primary_completion_date": "2024-10-23",
+    "completion_date": "2024-10-23",
+    "enrollment": 274,
+    "enrollment_type": "ACTUAL",
+    "countries": [
+      "United States"
+    ]
+  },
+  "NCT06105190": {
+    "title": "Clinical Study to Evaluate Clinical Outcomes of LuxSmart IOL as Compared With LuxGood IOL",
+    "status": "ACTIVE_NOT_RECRUITING",
+    "sponsor": "Cutting Edge SAS",
+    "phases": [
+      "NA"
+    ],
+    "start_date": "2023-06-21",
+    "primary_completion_date": "2025-04",
+    "completion_date": "2025-04",
+    "enrollment": 251,
+    "enrollment_type": "ACTUAL",
+    "countries": [
+      "Austria",
+      "Czechia",
+      "Germany",
+      "Philippines",
+      "Singapore",
+      "Spain"
+    ]
+  },
+  "NCT06111222": {
+    "title": "Visual Performance of Patients Implanted With a Multifocal IOL",
+    "status": "COMPLETED",
+    "sponsor": "Carl Zeiss Meditec AG",
+    "phases": [
+      "NA"
+    ],
+    "start_date": "2023-10-31",
+    "primary_completion_date": "2026-01-13",
+    "completion_date": "2026-01-13",
+    "enrollment": 69,
+    "enrollment_type": "ACTUAL",
+    "countries": [
+      "Germany",
+      "Spain"
+    ]
+  },
+  "NCT06120842": {
+    "title": "Evaluation of the Bimatoprost Implant System Used in Combination With the SpyGlass Intraocular Lens Compared to Timolol Ophthalmic Solution",
+    "status": "ACTIVE_NOT_RECRUITING",
+    "sponsor": "SpyGlass Pharma, Inc.",
+    "phases": [
+      "PHASE1",
+      "PHASE2"
+    ],
+    "start_date": "2023-10-13",
+    "primary_completion_date": "2025-01-31",
+    "completion_date": "2027-11",
+    "enrollment": 201,
+    "enrollment_type": "ACTUAL",
+    "countries": [
+      "United States"
+    ]
+  },
+  "NCT06258707": {
+    "title": "Bicentric Clinical Investigation to Assess Safety and Performance of LuxBoost IOL",
+    "status": "RECRUITING",
+    "sponsor": "Cutting Edge SAS",
+    "phases": [
+      "NA"
+    ],
+    "start_date": "2024-10-14",
+    "primary_completion_date": "2027-12-15",
+    "completion_date": "2028-06-15",
+    "enrollment": 58,
+    "enrollment_type": "ESTIMATED",
+    "countries": [
+      "France"
+    ]
+  },
+  "NCT06264232": {
+    "title": "AT ELANA 841P Posterior Chamber Intraocular Lens for Correction of Aphakia Following Cataract Removal",
+    "status": "COMPLETED",
+    "sponsor": "Carl Zeiss Meditec, Inc.",
+    "phases": [
+      "NA"
+    ],
+    "start_date": "2024-07-12",
+    "primary_completion_date": "2025-11-03",
+    "completion_date": "2025-12-01",
+    "enrollment": 284,
+    "enrollment_type": "ACTUAL",
+    "countries": [
+      "United States"
+    ]
+  },
+  "NCT06323915": {
+    "title": "Comparative Study of 3 Multifocal Intraocular Lenses in Murcia",
+    "status": "UNKNOWN",
+    "sponsor": "Cristalens Industrie",
+    "phases": [
+      "NA"
+    ],
+    "start_date": "2021-04-20",
+    "primary_completion_date": "2025-06-20",
+    "completion_date": "2025-09-20",
+    "enrollment": 84,
+    "enrollment_type": "ESTIMATED",
+    "countries": [
+      "Spain"
+    ]
+  },
+  "NCT06327347": {
+    "title": "Comparative Study of 2 Multifocal Intraocular Lenses in Heidelberg",
+    "status": "UNKNOWN",
+    "sponsor": "Cristalens Industrie",
+    "phases": [
+      "NA"
+    ],
+    "start_date": "2022-07-17",
+    "primary_completion_date": "2026-03-31",
+    "completion_date": "2026-07-31",
+    "enrollment": 50,
+    "enrollment_type": "ESTIMATED",
+    "countries": [
+      "Germany"
+    ]
+  },
+  "NCT06333015": {
+    "title": "Study to Evaluate the Safety and Effectiveness of the enVista® Beyond (EY) EDF Intraocular Lens in Subjects Undergoing Cataract Extraction",
+    "status": "COMPLETED",
+    "sponsor": "Bausch & Lomb Incorporated",
+    "phases": [
+      "NA"
+    ],
+    "start_date": "2024-08-07",
+    "primary_completion_date": "2026-06-11",
+    "completion_date": "2026-06-11",
+    "enrollment": 304,
+    "enrollment_type": "ACTUAL",
+    "countries": [
+      "United States"
+    ]
+  },
+  "NCT06377514": {
+    "title": "Clinical Investigation of the TECNIS® Next-Generation Intraocular Lens",
+    "status": "COMPLETED",
+    "sponsor": "Johnson & Johnson Surgical Vision, Inc.",
+    "phases": [
+      "NA"
+    ],
+    "start_date": "2024-06-03",
+    "primary_completion_date": "2025-04-23",
+    "completion_date": "2025-04-23",
+    "enrollment": 245,
+    "enrollment_type": "ACTUAL",
+    "countries": [
+      "United States"
+    ]
+  },
+  "NCT06400745": {
+    "title": "Clareon PanOptix Pro vs. Clareon PanOptix - Study A",
+    "status": "COMPLETED",
+    "sponsor": "Alcon Research",
+    "phases": [
+      "NA"
+    ],
+    "start_date": "2024-06-18",
+    "primary_completion_date": "2024-12-13",
+    "completion_date": "2025-04-30",
+    "enrollment": 87,
+    "enrollment_type": "ACTUAL",
+    "countries": [
+      "United States"
+    ]
+  },
+  "NCT06401551": {
+    "title": "Clareon PanOptix Pro vs. Clareon PanOptix - Study B",
+    "status": "COMPLETED",
+    "sponsor": "Alcon Research",
+    "phases": [
+      "NA"
+    ],
+    "start_date": "2024-06-18",
+    "primary_completion_date": "2024-12-13",
+    "completion_date": "2025-04-30",
+    "enrollment": 71,
+    "enrollment_type": "ACTUAL",
+    "countries": [
+      "United States"
+    ]
+  },
+  "NCT06446817": {
+    "title": "Multicentric Clinical Investigation to Assess Safety and Performance of Lux HighAdd IOL",
+    "status": "RECRUITING",
+    "sponsor": "Cutting Edge SAS",
+    "phases": [
+      "NA"
+    ],
+    "start_date": "2024-12-19",
+    "primary_completion_date": "2028-09",
+    "completion_date": "2028-12",
+    "enrollment": 57,
+    "enrollment_type": "ESTIMATED",
+    "countries": [
+      "France"
+    ]
+  },
+  "NCT06639711": {
+    "title": "Taurine Eye Drops May Prevent the Progression of Cataract",
+    "status": "ACTIVE_NOT_RECRUITING",
+    "sponsor": "University Of Anbar",
+    "phases": [
+      "PHASE1",
+      "PHASE2"
+    ],
+    "start_date": "2023-07-10",
+    "primary_completion_date": "2024-12-20",
+    "completion_date": "2024-12-20",
+    "enrollment": 50,
+    "enrollment_type": "ACTUAL",
+    "countries": [
+      "Iraq"
+    ]
+  },
+  "NCT06784063": {
+    "title": "Visual Performance With Clareon® Vivity® Intraocular Lenses (IOLs)",
+    "status": "COMPLETED",
+    "sponsor": "Alcon Research",
+    "phases": [
+      "NA"
+    ],
+    "start_date": "2025-04-10",
+    "primary_completion_date": "2025-06-13",
+    "completion_date": "2025-06-13",
+    "enrollment": 40,
+    "enrollment_type": "ACTUAL",
+    "countries": [
+      "United States"
+    ]
+  },
+  "NCT07092020": {
+    "title": "Extended Depth of Focus (EDF) Intraocular Lens (IOL) Versus Monofocal Intracoular Lens (IOL)",
+    "status": "COMPLETED",
+    "sponsor": "Carl Zeiss Meditec AG",
+    "phases": [
+      "NA"
+    ],
+    "start_date": "2025-10-01",
+    "primary_completion_date": "2026-07-27",
+    "completion_date": "2026-07-27",
+    "enrollment": 220,
+    "enrollment_type": "ACTUAL",
+    "countries": [
+      "Bulgaria",
+      "Czechia",
+      "Romania",
+      "Spain"
+    ]
+  },
+  "NCT07147192": {
+    "title": "Feasibility Study of an Accommodating IOL Design",
+    "status": "TERMINATED",
+    "sponsor": "Alcon Research",
+    "phases": [
+      "NA"
+    ],
+    "start_date": "2025-12-03",
+    "primary_completion_date": "2026-10-22",
+    "completion_date": "2026-10-22",
+    "enrollment": 17,
+    "enrollment_type": "ACTUAL",
+    "countries": [
+      "Costa Rica",
+      "Dominican Republic",
+      "El Salvador",
+      "Panama"
+    ]
+  },
+  "NCT07154797": {
+    "title": "Evaluation of the Safety and Effectiveness of the Bimatoprost Implant System / IOL Combination in Patients With Ocular Hypertension or Mild to Moderate Open-angle Glaucoma",
+    "status": "COMPLETED",
+    "sponsor": "SpyGlass Pharma, Inc.",
+    "phases": [
+      "NA"
+    ],
+    "start_date": "2022-04-21",
+    "primary_completion_date": "2022-12-13",
+    "completion_date": "2022-12-13",
+    "enrollment": 24,
+    "enrollment_type": "ACTUAL",
+    "countries": [
+      "Honduras"
+    ]
+  },
+  "NCT07161635": {
+    "title": "Post Market Clinical Evaluation of Clareon PanOptix Pro and Clareon PanOptix Pro Toric IOLs",
+    "status": "COMPLETED",
+    "sponsor": "Alcon Research",
+    "phases": [
+      "NA"
+    ],
+    "start_date": "2025-10-14",
+    "primary_completion_date": "2026-10-07",
+    "completion_date": "2026-10-07",
+    "enrollment": 110,
+    "enrollment_type": "ACTUAL",
+    "countries": [
+      "United States"
+    ]
+  },
+  "NCT07218783": {
+    "title": "Evaluation of the Safety and Efficacy of the Bimatoprost Implant System Used in Combination With the SpyGlass IOL Compared to Timolol Ophthalmic Solution (Rhine)",
+    "status": "RECRUITING",
+    "sponsor": "SpyGlass Pharma, Inc.",
+    "phases": [
+      "PHASE3"
+    ],
+    "start_date": "2025-10-15",
+    "primary_completion_date": "2029-03-31",
+    "completion_date": "2031-03-31",
+    "enrollment": 400,
+    "enrollment_type": "ESTIMATED",
+    "countries": [
+      "United States"
+    ]
+  },
+  "NCT07218796": {
+    "title": "Evaluation of the Safety and Efficacy of the Bimatoprost Implant System Used in Combination With the SpyGlass IOL Compared to Timolol Ophthalmic Solution (Rhone)",
+    "status": "RECRUITING",
+    "sponsor": "SpyGlass Pharma, Inc.",
+    "phases": [
+      "PHASE3"
+    ],
+    "start_date": "2025-10-28",
+    "primary_completion_date": "2029-05-31",
+    "completion_date": "2031-05-31",
+    "enrollment": 400,
+    "enrollment_type": "ESTIMATED",
+    "countries": [
+      "United States"
+    ]
+  },
+  "NCT07384182": {
+    "title": "Clinical Outcomes of Femtosecond Laser Presbyopia Treatment in Monofocal IOLs",
+    "status": "COMPLETED",
+    "sponsor": "Perfect Lens, LLC",
+    "phases": [
+      "NA"
+    ],
+    "start_date": "2023-10-15",
+    "primary_completion_date": "2024-11-12",
+    "completion_date": "2024-11-12",
+    "enrollment": 19,
+    "enrollment_type": "ACTUAL",
+    "countries": [
+      "Czechia"
+    ]
+  },
+  "NCT07395986": {
+    "title": "A Multicenter, Randomized, Double-Masked, Placebo-Controlled Pilot Study to Evaluate the Efficacy and Safety of ZOC2017217 in Subjects With Age-Related Cataract",
+    "status": "ACTIVE_NOT_RECRUITING",
+    "sponsor": "Ocusun Ophthalmic Pharmaceutical (Guangzhou) Co., Ltd.",
+    "phases": [
+      "PHASE2"
+    ],
+    "start_date": "2026-02-10",
+    "primary_completion_date": "2027-02",
+    "completion_date": "2027-02",
+    "enrollment": 8,
+    "enrollment_type": "ACTUAL",
+    "countries": [
+      "United States"
+    ]
+  },
+  "NCT07484191": {
+    "title": "Contralateral Claims Study of Clareon Vivity Pro",
+    "status": "ACTIVE_NOT_RECRUITING",
+    "sponsor": "Alcon Research",
+    "phases": [
+      "NA"
+    ],
+    "start_date": "2026-04-28",
+    "primary_completion_date": "2026-10-28",
+    "completion_date": "2027-02",
+    "enrollment": 165,
+    "enrollment_type": "ACTUAL",
+    "countries": [
+      "Australia"
+    ]
+  },
+  "NCT07587138": {
+    "title": "Clinical Evaluation of a Novel Trifocal IOL",
+    "status": "RECRUITING",
+    "sponsor": "Alcon Research",
+    "phases": [
+      "NA"
+    ],
+    "start_date": "2026-10-09",
+    "primary_completion_date": "2027-07",
+    "completion_date": "2027-07",
+    "enrollment": 66,
+    "enrollment_type": "ESTIMATED",
+    "countries": [
+      "Australia",
+      "India",
+      "Philippines"
+    ]
+  },
+  "NCT07607860": {
+    "title": "Clinical Evaluation of the Adaptilens Accommodating IOL",
+    "status": "NOT_YET_RECRUITING",
+    "sponsor": "Adaptilens, Inc.",
+    "phases": [
+      "NA"
+    ],
+    "start_date": "2026-09",
+    "primary_completion_date": "2030-12",
+    "completion_date": "2030-12",
+    "enrollment": 100,
+    "enrollment_type": "ESTIMATED",
+    "countries": []
+  },
+  "NCT07768475": {
+    "title": "A Prospective Study Comparing Visual Outcomes and Patient Satisfaction Following Implantation of the Clareon PanOptix Versus Tecnis Odyssey IOL in Patients Undergoing Cataract Surgery.",
+    "status": "ACTIVE_NOT_RECRUITING",
+    "sponsor": "Nvision Laser Eye Centers",
+    "phases": [
+      "NA"
+    ],
+    "start_date": "2025-07-07",
+    "primary_completion_date": "2026-10-12",
+    "completion_date": "2026-11-12",
+    "enrollment": 266,
+    "enrollment_type": "ACTUAL",
+    "countries": [
+      "United States"
+    ]
+  },
+  "NCT07915076": {
+    "title": "Safety and Clinical Performance of the LENTIS® MAX LS-313 MF80 Compared With the Monofocal L-313 in Cataract Patients With Late Age-Related Macular Degeneration: A Multicenter Comparative Clinical Investigation.",
+    "status": "NOT_YET_RECRUITING",
+    "sponsor": "Teleon Surgical B.V.",
+    "phases": [
+      "NA"
+    ],
+    "start_date": "2027-02-01",
+    "primary_completion_date": "2030-03-01",
+    "completion_date": "2030-08-01",
+    "enrollment": 35,
+    "enrollment_type": "ESTIMATED",
+    "countries": []
+  }
+}

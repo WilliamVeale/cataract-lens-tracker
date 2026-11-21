@@ -1,0 +1,22 @@
+id: rxsight-lal
+name: Light Adjustable Lens
+code_names: [LAL, LAL+]
+company: RxSight
+group: changes
+type: Adjustable
+stage: approved-us
+status: approved
+availability: US now
+latest:
+  date: 2023-03-31
+  text: The FDA approved LAL+, a model with a changed optical design.
+  evidence: regulator
+trials: [NCT05202808]
+fda:
+  - {pma: P160055, date: 2017-11-22}
+  - {pma: P160055, supplement: S024, date: 2023-03-31}
+sources:
+  - {url: "https://api.fda.gov/device/pma.json?search=pma_number%3AP160055+AND+supplement_number%3A%22%22", read: 2026-11-21}
+  - {url: "https://api.fda.gov/device/pma.json?search=pma_number%3AP160055+AND+supplement_number%3AS024", read: 2026-11-21}
+  - {url: "https://clinicaltrials.gov/study/NCT05202808", read: 2026-11-21}
+reviewed: 2026-11-21
