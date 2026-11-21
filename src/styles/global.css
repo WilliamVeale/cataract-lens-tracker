@@ -1,0 +1,6 @@
+@import "tailwindcss";
+
+/* Dark mode follows the reader's system setting (Tailwind's default). */
+:root {
+  color-scheme: light dark;
+}

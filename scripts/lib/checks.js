@@ -274,3 +274,19 @@ export function checkEvidence({ file, data }) {
   }
   return out;
 }
+
+/**
+ * Rule 5: the page says the FDA has approved no drug to treat a cataract
+ * (data/site.yaml, "no_drug_approved"). Fail if openFDA now has an approved
+ * label that may say so. A person reads the label and changes the page text.
+ * @param {string} file The file that holds the claim.
+ * @param {Array<{id: string, name: string, application: string}>} hits From findApprovedCataractDrugs().
+ */
+export function checkNoApprovedDrug(file, hits) {
+  return hits.map((h) => ({
+    file,
+    rule: 5,
+    message: `openFDA has an approved drug label that may treat a cataract: ${h.name ?? 'no name'} ` +
+      `(${h.application}, label id ${h.id}). Read the label. If it is true, change "no_drug_approved".`,
+  }));
+}

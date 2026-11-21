@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-// The build checks. The build fails if one is broken.
+// The build checks (rules 0 to 5). The build fails if one is broken.
 // See docs/spec.md, "How the data is kept".
 //
 //   node scripts/check.js [--data data]
@@ -9,10 +9,11 @@
 import path from 'node:path';
 import { parseArgs } from 'node:util';
 import {
-  checkEvidence, checkFda, checkShape, checkSources, checkTrials,
+  checkEvidence, checkFda, checkNoApprovedDrug, checkShape, checkSources, checkTrials,
   collectFdaRefs, collectNcts,
 } from './lib/checks.js';
 import { getTrialsByIds } from './lib/ctgov.js';
+import { findApprovedCataractDrugs, searchCataractLabels } from './lib/drugs.js';
 import { loadEntries } from './lib/entries.js';
 import { getPmaRecords } from './lib/openfda.js';
 
@@ -22,6 +23,7 @@ const RULES = {
   2: 'every NCT number is in ClinicalTrials.gov',
   3: 'approved-us has an FDA record that openFDA confirms',
   4: 'every result number has an evidence tag',
+  5: 'no drug is approved to treat a cataract (the page says so)',
 };
 
 const { values: args } = parseArgs({ options: { data: { type: 'string', default: 'data' } } });
@@ -47,7 +49,12 @@ async function ask(name, job) {
 
 const trials = await ask('ClinicalTrials.gov', () => getTrialsByIds([...ncts]));
 const fda = await ask('openFDA', () => getPmaRecords(fdaRefs));
-problems.push(...checkTrials(entries, trials), ...checkFda(entries, fda));
+const labels = await ask('openFDA drug labels', () => searchCataractLabels());
+problems.push(
+  ...checkTrials(entries, trials),
+  ...checkFda(entries, fda),
+  ...checkNoApprovedDrug(path.join(args.data, 'site.yaml'), findApprovedCataractDrugs(labels)),
+);
 
 if (entries.length === 0) {
   console.log(`No entries in ${path.join(args.data, 'lenses')}. Nothing to check.`);
@@ -55,7 +62,7 @@ if (entries.length === 0) {
 
 if (problems.length === 0) {
   console.log(`All checks pass: ${entries.length} entries, ${ncts.size} NCT numbers, ` +
-    `${fdaRefs.length} FDA records.`);
+    `${fdaRefs.length} FDA records, ${labels.length} drug labels that name cataract.`);
   process.exit(0);
 }
 

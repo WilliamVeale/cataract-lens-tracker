@@ -1,0 +1,80 @@
+# The text on the page. A person writes and checks it (CC BY 4.0, like all of data/).
+# Rules: a health fact needs a source. Plain words. Do not rank lenses, and
+# do not tell a reader to wait. The page does not show an empty text.
+#
+# The words below come from docs/spec.md and README.md. Each empty text
+# is for a person to write.
+
+title: Cataract Lens Pipeline
+tagline: >-
+  New cataract replacement lenses, and how far each one has got: in the lab,
+  in a trial, or approved. Each fact links to its source.
+
+# Shown at the top and at the bottom of the page.
+not_advice: >-
+  Not medical advice. This page lists facts from public records. It does not
+  tell you which lens to pick, and it does not tell you to wait for a new
+  one. Ask your eye surgeon.
+
+# Shown in the "No surgery" group. Rule 5 of the build checks reads openFDA
+# again each build. If an approved drug label may treat a cataract, the build
+# fails until a person checks it and changes this text.
+no_drug_approved: The FDA has not approved any drug or eye drop to treat a cataract.
+
+groups:
+  fixed:
+    label: Fixed focus
+    about: >-
+      Monofocal plus, EDOF (extended depth of focus), multifocal and trifocal
+      lenses. The lens does not move.
+  changes:
+    label: Changes focus
+    about: >-
+      Accommodating lenses (they change shape like a young eye) and adjustable
+      lenses (the doctor tunes them after surgery).
+  no-surgery:
+    label: No surgery
+    about: Drugs that try to slow or clear a cataract.
+
+stages:
+  approved-us: {label: Approved (US), about: The FDA approved it. A US surgeon can use it.}
+  approved-elsewhere: {label: Approved elsewhere, about: On sale in Europe or other places. Not in the US.}
+  pivotal: {label: Pivotal trial, about: The large trial that the FDA needs for approval.}
+  early: {label: Early trial, about: A small first test in people.}
+  lab: {label: Lab, about: No test in people yet.}
+
+statuses:
+  active: {label: Active, about: ""}
+  approved: {label: Approved, about: ""}
+  stalled: {label: Stalled, about: The trial record is out of date and the company is silent.}
+  discontinued: {label: Discontinued, about: ""}
+
+evidence:
+  regulator: Regulator
+  paper: Peer-reviewed paper
+  company: Company claim
+
+# Each term is explained once. Write the empty ones from a source.
+terms:
+  - {term: IOL, text: "Intraocular lens: the plastic lens a surgeon puts in the eye after the cloudy lens comes out."}
+  - {term: EDOF, text: Extended depth of focus.}
+  - {term: Toric, text: A toric lens fixes astigmatism.}
+  - {term: PMA, text: "Premarket approval: the FDA path for these lenses."}
+  - {term: Halo, text: ""}
+  - {term: Monovision, text: ""}
+  - {term: Monofocal plus, text: ""}
+  - {term: Multifocal and trifocal, text: ""}
+
+# The second section. The spec: standard monofocal, toric, monovision. Short
+# and plain. It tells the reader that the basic lens is good and that new is
+# not the same as better. A person writes it, with sources.
+today:
+  title: What surgeons use today
+  text: ""
+
+about_data: >-
+  Trial facts come from ClinicalTrials.gov. US approvals come from the openFDA
+  device PMA API. A script reads both each week and opens a pull request. A
+  person checks every change before it goes live.
+
+repo: https://github.com/WilliamVeale/cataract-lens-tracker
