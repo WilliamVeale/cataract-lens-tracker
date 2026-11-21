@@ -17,8 +17,8 @@ is in a file or in `data/ignore.yaml`. All facts were read 2026-11-21
 Step 5 is done: the page (PR #3). `src/pages/index.astro` reads `data/`
 through `scripts/lib/site.js`. Page text is in `data/site.yaml`. Rule 5
 of the checks: no drug is approved to treat a cataract (openFDA drug
-labels). Nobody has seen the layout in a real browser yet: look at it
-with `npm run dev` (desktop and phone width, light and dark).
+labels). The owner checked the layout in a browser on 2026-11-21
+(`npm run dev`).
 Next: a person writes `how_it_works`, `summary` and `trade_offs` in each
 lens file, and the empty texts in `data/site.yaml` (terms, "What
 surgeons use today"). Then connect Cloudflare Pages (see README).
