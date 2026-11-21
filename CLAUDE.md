@@ -13,8 +13,12 @@ the task needs, not all of it.
 Step 3 is done: the four build checks and the weekly refresh (PR #1).
 Step 4 facts are done: 41 files in `data/lenses/`, and every refresh hit
 is in a file or in `data/ignore.yaml`. All facts were read 2026-11-21.
-Next: a person writes `how_it_works`, `summary` and `trade_offs` (all
-empty now). The page comes last (step 5).
+Step 5 is done: the page. `src/pages/index.astro` reads `data/` through
+`scripts/lib/site.js`. Page text is in `data/site.yaml`. Rule 5 of the
+checks: no drug is approved to treat a cataract (openFDA drug labels).
+Next: a person writes `how_it_works`, `summary` and `trade_offs` in each
+lens file, and the empty texts in `data/site.yaml` (terms, "What
+surgeons use today"). Then connect Cloudflare Pages (see README).
 
 How the refresh hits were sorted. Use the same rules for new hits:
 
@@ -37,7 +41,9 @@ How the refresh hits were sorted. Use the same rules for new hits:
 ## Commands
 
 - `npm test`: unit tests. No network.
-- `npm run check`: the build checks. They ask the live APIs.
+- `npm run check`: the build checks (rules 0 to 5). They ask the live APIs.
+- `npm run build`: the checks, then the page into `dist/`. `npm run dev`
+  serves the page while you edit; it skips the checks.
 - `npm run refresh -- --report report.md`: the weekly refresh.
 - Both take `--data <dir>`, to test on a copy of `data/`.
 

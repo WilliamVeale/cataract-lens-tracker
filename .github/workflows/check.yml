@@ -21,7 +21,12 @@ jobs:
           cache: npm
       - run: npm ci
       - run: npm test
-      - name: The four build checks (they ask the live APIs)
+      - name: The build checks (they ask the live APIs)
         run: npm run check
         env:
           OPENFDA_API_KEY: ${{ secrets.OPENFDA_API_KEY }}
+      # The checks just ran, so build without the prebuild step.
+      - name: Build the page
+        run: npx astro build
+        env:
+          ASTRO_TELEMETRY_DISABLED: '1'

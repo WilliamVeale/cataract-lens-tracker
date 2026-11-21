@@ -9,7 +9,8 @@ lens is an IOL (intraocular lens): the plastic lens a surgeon puts in the
 eye after the cloudy lens comes out. Each row shows how far a lens has got:
 in the lab, in a trial, or approved. Each fact links to its source.
 
-Status: no site is built yet. The plan is in [docs/spec.md](docs/spec.md).
+Status: the page is built, but it is not online yet. The plan is in
+[docs/spec.md](docs/spec.md).
 
 ## Where the data comes from
 
@@ -25,13 +26,33 @@ checks every change before it goes live.
 
 Open a pull request or an issue. Give a source link for each fact.
 
-To run the checks on your copy (Node 22 or newer):
+To run the checks on your copy (Node 22.23.4 or newer):
 
 ```bash
 npm ci
 npm test
 npm run check
 ```
+
+To see the page while you edit: `npm run dev`, then open
+<http://localhost:4321>. `npm run build` runs the checks, then writes the
+page to `dist/`.
+
+The page text (not the lens facts) is in `data/site.yaml`.
+
+## Hosting
+
+Cloudflare Pages, free plan. Settings for the project:
+
+- Build command: `npm run build`
+- Build output directory: `dist`
+- Node: Cloudflare reads `.node-version`.
+- Environment variables: `ASTRO_TELEMETRY_DISABLED=1` (otherwise Astro
+  sends anonymous usage data from each build), and optionally
+  `OPENFDA_API_KEY`.
+
+The build asks ClinicalTrials.gov and openFDA first. If one is down, the
+build fails and the last good page stays online.
 
 ## License
 

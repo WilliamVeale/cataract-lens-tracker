@@ -212,10 +212,14 @@ Rules the build must enforce. The build fails if one is broken:
 2. Every NCT number exists in ClinicalTrials.gov.
 3. `stage: approved-us` needs an `fda` record that the API confirms.
 4. Every result number has an evidence tag.
+5. No drug is approved to treat a cataract, as the page says (see
+   "Content rules"). The check reads openFDA drug labels whose
+   indications name "cataract". It fails on an approved label (NDA,
+   ANDA or BLA number) that does not only mean cataract surgery.
 
 The checks are `npm run check` (`scripts/check.js`). The `prebuild`
-script runs them before every `npm run build`, so step 5 only needs to
-add the build. Rules 2 and 3 ask the live APIs. The file must also be
+script runs them before every `npm run build`. Rules 2, 3 and 5 ask
+the live APIs. The file must also be
 valid (known keys, allowed values, `id` the same as the file name).
 
 How the build checks rule 4: a result number (a percent, a vision score
@@ -379,4 +383,5 @@ LAL+ (RxSight) is checked: FDA P160055 S024, in `rxsight-lal`.
 3. Done 2026-11-21: the refresh script and the four build checks.
 4. Done 2026-11-21: the facts in the YAML files, each one checked.
    A person still writes How it works, Summary and Trade-offs.
-5. Build the page last.
+5. Done 2026-11-21: the page (`src/pages/index.astro`). Its text is in
+   `data/site.yaml`. Empty texts there are for a person to write.
