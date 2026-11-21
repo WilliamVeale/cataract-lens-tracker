@@ -29,12 +29,21 @@ jobs:
           node-version-file: .node-version
           cache: npm
       - run: npm ci
+      # If last week's pull request is still open, take its unmatched.json,
+      # so a record keeps the "found" date of the week it first showed up.
+      # The script drops records that an entry or data/ignore.yaml now has.
+      # No bot branch yet: skip this step.
+      - name: Keep the "found" dates from an open refresh PR
+        run: |
+          if git fetch --depth=1 origin bot/weekly-refresh; then
+            git restore --source=FETCH_HEAD --worktree -- data/registry/unmatched.json || true
+          fi
       - name: Read both APIs and write data/registry/
         run: npm run refresh -- --report "$RUNNER_TEMP/report.md"
         env:
           OPENFDA_API_KEY: ${{ secrets.OPENFDA_API_KEY }}
       - name: Open or update the pull request
-        uses: peter-evans/create-pull-request@v8
+        uses: peter-evans/create-pull-request@3ffccacd46053766916f087ce41d627c0b8cf2d1 # v8
         with:
           branch: bot/weekly-refresh
           delete-branch: true

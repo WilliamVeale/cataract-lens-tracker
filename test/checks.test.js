@@ -166,6 +166,8 @@ test('findResultNumbers finds common result numbers', () => {
   assert.deepEqual(kinds('a range of 1.5 D'), ['a diopter number']);
   assert.deepEqual(kinds('up to 2 diopters'), ['a diopter number']);
   assert.deepEqual(kinds('9 out of 10 people'), ['a share, like "9 of 10"']);
+  assert.deepEqual(kinds('1 in 20 eyes'), ['a share, like "9 of 10"']);
+  assert.deepEqual(kinds('1 in every 50 eyes'), ['a share, like "9 of 10"']);
   assert.deepEqual(kinds('2x more halos'), ['a "times" number']);
   assert.deepEqual(kinds('2 more lines'), ['lines on a vision chart']);
   assert.deepEqual(kinds('p < 0.05'), ['a p-value']);
@@ -178,6 +180,9 @@ test('findResultNumbers lets years, model codes and plain words pass', () => {
     'A trifocal lens. The doctor tunes it after surgery.',
     'US now',
     '2027 to 2028',
+    'Sold since 2019 in 60 countries.',
+    'Approved in 2023 in 40 countries.',
+    'Started phase 3 in 2025.',
   ]) {
     assert.deepEqual(findResultNumbers(text), [], text);
   }

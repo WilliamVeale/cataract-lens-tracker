@@ -32,7 +32,13 @@ const RESULT_PATTERNS = [
   [/\blog ?MAR\b/gi, 'a vision score'],
   [/\d\s*(?:diopters?|dioptres?)\b/gi, 'a diopter number'],
   [/[+-]?\d+\.\d+\s?D\b/g, 'a diopter number'],
-  [/\b\d+(?:\.\d+)?\s+(?:of|in|out of)\s+(?:every\s+)?\d+\b/gi, 'a share, like "9 of 10"'],
+  [/\b\d+(?:\.\d+)?\s+(?:of|out of)\s+(?:every\s+)?\d+\b/gi, 'a share, like "9 of 10"'],
+  // "in" also joins a year to a count ("since 2019 in 60 countries", "phase 3
+  // in 2025"), so a year (1900-2099) on either side is not a share.
+  [
+    /\b(?!(?:19|20)\d\d\b)\d+(?:\.\d+)?\s+in\s+(?:every\s+)?(?!(?:19|20)\d\d\b)\d+\b/gi,
+    'a share, like "9 of 10"',
+  ],
   [/\b\d+(?:\.\d+)?\s*(?:x|times)\b/gi, 'a "times" number'],
   [/\b\d+\s+(?:more\s+|fewer\s+)?lines?\b/gi, 'lines on a vision chart'],
   [/\bp\s*[<=>≤]\s*0?\.\d+/gi, 'a p-value'],
