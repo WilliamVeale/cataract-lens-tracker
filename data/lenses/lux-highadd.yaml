@@ -1,0 +1,16 @@
+id: lux-highadd
+name: LuxHighAdd
+company: Cutting Edge
+group: fixed
+type: Multifocal
+stage: early
+status: active
+availability: Unknown
+latest:
+  date: 2024-12-19
+  text: The trial in France started.
+  evidence: company
+trials: [NCT06446817]
+sources:
+  - {url: "https://clinicaltrials.gov/study/NCT06446817", read: 2026-11-21}
+reviewed: 2026-11-21

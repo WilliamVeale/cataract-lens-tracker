@@ -1,0 +1,16 @@
+id: taurine-eye-drops
+name: Taurine eye drops (Viziloton)
+company: University of Anbar
+group: no-surgery
+type: Eye drops
+stage: early
+status: stalled
+availability: Unknown
+latest:
+  date: 2024-12-09
+  text: Last update of the trial record. It still says active, after its planned end in December 2024.
+  evidence: company
+trials: [NCT06639711]
+sources:
+  - {url: "https://clinicaltrials.gov/study/NCT06639711", read: 2026-11-21}
+reviewed: 2026-11-21

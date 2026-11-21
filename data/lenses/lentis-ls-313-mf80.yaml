@@ -1,0 +1,17 @@
+id: lentis-ls-313-mf80
+name: LENTIS MAX LS-313 MF80
+company: Teleon Surgical
+group: fixed
+type: Bifocal, for late macular degeneration
+stage: early
+status: active
+availability: Unknown
+latest:
+  date: 2026-11-04
+  text: A trial was registered. It is planned to start in 2027.
+  evidence: company
+trials: [NCT07915076]
+sources:
+  - {url: "https://clinicaltrials.gov/study/NCT07915076", read: 2026-11-21}
+  - {url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC8412355", read: 2026-11-21}
+reviewed: 2026-11-21

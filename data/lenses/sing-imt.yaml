@@ -1,0 +1,16 @@
+id: sing-imt
+name: SING IMT (implantable miniature telescope)
+company: VisionCare
+group: fixed
+type: Implantable telescope for late macular degeneration
+stage: early
+status: stalled
+availability: Unknown
+latest:
+  date: 2024-12-03
+  text: Last update of the trial record. It still says recruiting, after its planned end in December 2025.
+  evidence: company
+trials: [NCT05438732]
+sources:
+  - {url: "https://clinicaltrials.gov/study/NCT05438732", read: 2026-11-21}
+reviewed: 2026-11-21

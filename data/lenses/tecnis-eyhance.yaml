@@ -1,0 +1,23 @@
+id: tecnis-eyhance
+name: TECNIS Eyhance
+code_names: [ICB00]
+company: Johnson & Johnson Surgical Vision
+group: fixed
+type: Monofocal plus
+stage: approved-us
+status: approved
+availability: US now
+latest:
+  date: 2020-12-29
+  text: The FDA approved the lens and its toric models.
+  evidence: regulator
+trials: [NCT05025345, NCT05090813, NCT05396599, NCT05481125]
+fda:
+  - {pma: P980040, supplement: S117, date: 2020-12-29}
+sources:
+  - {url: "https://api.fda.gov/device/pma.json?search=pma_number%3AP980040+AND+supplement_number%3AS117", read: 2026-11-21}
+  - {url: "https://clinicaltrials.gov/study/NCT05025345", read: 2026-11-21}
+  - {url: "https://clinicaltrials.gov/study/NCT05090813", read: 2026-11-21}
+  - {url: "https://clinicaltrials.gov/study/NCT05396599", read: 2026-11-21}
+  - {url: "https://clinicaltrials.gov/study/NCT05481125", read: 2026-11-21}
+reviewed: 2026-11-21

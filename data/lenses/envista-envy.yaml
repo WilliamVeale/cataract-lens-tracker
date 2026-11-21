@@ -1,0 +1,18 @@
+id: envista-envy
+name: enVista Envy
+code_names: [EN, EPN]
+company: Bausch & Lomb
+group: fixed
+type: Multifocal
+stage: approved-us
+status: approved
+availability: US now
+latest:
+  date: 2024-10-10
+  text: The FDA approved the lens and its toric model.
+  evidence: regulator
+fda:
+  - {pma: P240005, date: 2024-10-10}
+sources:
+  - {url: "https://api.fda.gov/device/pma.json?search=pma_number%3AP240005+AND+supplement_number%3A%22%22", read: 2026-11-21}
+reviewed: 2026-11-21

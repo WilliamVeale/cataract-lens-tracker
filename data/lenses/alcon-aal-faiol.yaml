@@ -1,0 +1,17 @@
+id: alcon-aal-faiol
+name: AAL-FAIOL
+code_names: [AAL-FAIOL]
+company: Alcon
+group: changes
+type: Accommodating
+stage: early
+status: discontinued
+availability: Unknown
+latest:
+  date: 2026-10-22
+  text: Alcon stopped the trial. The record gives the reason as a management decision.
+  evidence: company
+trials: [NCT07147192]
+sources:
+  - {url: "https://clinicaltrials.gov/study/NCT07147192", read: 2026-11-21}
+reviewed: 2026-11-21

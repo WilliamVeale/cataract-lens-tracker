@@ -1,0 +1,17 @@
+id: nacuity-npi-002
+name: NPI-002 implant
+code_names: [NPI-002]
+company: Nacuity Pharmaceuticals
+group: no-surgery
+type: Drug implant to slow cataract growth
+stage: early
+status: active
+availability: Unknown
+latest:
+  date: 2026-09-03
+  text: The trial in Australia finished.
+  evidence: company
+trials: [NCT05026632]
+sources:
+  - {url: "https://clinicaltrials.gov/study/NCT05026632", read: 2026-11-21}
+reviewed: 2026-11-21

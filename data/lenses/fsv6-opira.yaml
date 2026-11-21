@@ -1,0 +1,16 @@
+id: fsv6-opira
+name: Opira
+company: FSV6
+group: changes
+type: Accommodating
+stage: early
+status: stalled
+availability: Unknown
+latest:
+  date: 2023-02-14
+  text: Last update of the trial record. ClinicalTrials.gov now shows its status as unknown.
+  evidence: company
+trials: [NCT04756908]
+sources:
+  - {url: "https://clinicaltrials.gov/study/NCT04756908", read: 2026-11-21}
+reviewed: 2026-11-21

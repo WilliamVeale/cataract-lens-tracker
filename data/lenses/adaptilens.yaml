@@ -1,0 +1,16 @@
+id: adaptilens
+name: Adaptilens
+company: Adaptilens
+group: changes
+type: Accommodating
+stage: early
+status: active
+availability: Unknown
+latest:
+  date: 2026-05-26
+  text: The trial was registered. It has not started yet.
+  evidence: company
+trials: [NCT07607860]
+sources:
+  - {url: "https://clinicaltrials.gov/study/NCT07607860", read: 2026-11-21}
+reviewed: 2026-11-21

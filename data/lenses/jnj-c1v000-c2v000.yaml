@@ -1,0 +1,16 @@
+id: jnj-c1v000-c2v000
+name: TECNIS C1V000 and C2V000
+code_names: [C1V000, C2V000]
+company: Johnson & Johnson Surgical Vision
+group: fixed
+stage: early
+status: active
+availability: Unknown
+latest:
+  date: 2023-01-31
+  text: The trial in Australia and New Zealand finished.
+  evidence: company
+trials: [NCT04890249]
+sources:
+  - {url: "https://clinicaltrials.gov/study/NCT04890249", read: 2026-11-21}
+reviewed: 2026-11-21

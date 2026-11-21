@@ -7,6 +7,145 @@
 #   - {id: NCT00000000, why: "glaucoma stent, not a lens"}
 # fda:
 #   - {id: P000000 S000, why: "new inserter only, same lens"}
+#
+# Sorted on 2026-11-21 from the records as read that day.
 
-trials: []
-fda: []
+trials:
+  # Not a lens
+  - {id: NCT04682288, why: "antibiotic implant for eye surgery, not a lens"}
+  - {id: NCT04702802, why: "viscoelastic gel used during surgery, not a lens"}
+  - {id: NCT04747834, why: "a way to remove the cataract, not a lens"}
+  - {id: NCT05056233, why: "eye drops for dry eye around surgery, not a lens"}
+  - {id: NCT05068479, why: "laser treatment of the white of the eye for presbyopia, not a lens"}
+  - {id: NCT05133518, why: "sedation tablet for surgery, not a lens"}
+  - {id: NCT06383273, why: "sedation tablet for surgery, not a lens"}
+  - {id: NCT05146310, why: "viscoelastic gel used during surgery, not a lens"}
+  - {id: NCT05304182, why: "eye measuring devices (EYESTAR 900, LENSTAR LS 900), not a lens"}
+  - {id: NCT05458661, why: "eye measurements before surgery, not a lens"}
+  - {id: NCT07325162, why: "eye measuring device, not a lens"}
+  - {id: NCT05495971, why: "contact lenses, not an implant"}
+  - {id: NCT06698731, why: "contact lenses, not an implant"}
+  - {id: NCT05729477, why: "a cataract removal method, not a lens"}
+  - {id: NCT06061718, why: "glaucoma drug implant given during cataract surgery, not a lens"}
+  - {id: NCT07036510, why: "glaucoma drug implant given during cataract surgery, not a lens"}
+  - {id: NCT06062771, why: "viscoelastic gel used during surgery, not a lens"}
+  - {id: NCT07184437, why: "viscoelastic gel used during surgery, not a lens"}
+  - {id: NCT07279506, why: "viscoelastic gel used during surgery, not a lens"}
+  - {id: NCT07343973, why: "viscoelastic gel used during surgery, not a lens"}
+  - {id: NCT06083025, why: "ring in the lens capsule to stop clouding after surgery, not a lens"}
+  - {id: NCT06246136, why: "glaucoma procedure, not a lens"}
+  - {id: NCT06741774, why: "glaucoma stent, not a lens"}
+  - {id: NCT06948773, why: "glaucoma procedure, not a lens"}
+  - {id: NCT06429306, why: "steroid for inflammation after surgery, not a lens"}
+  - {id: NCT06497699, why: "steroid for inflammation after surgery, not a lens"}
+  - {id: NCT07832552, why: "steroid for inflammation after surgery, not a lens"}
+  - {id: NCT06990074, why: "robot-assisted cataract surgery, not a lens"}
+  # A lens, but not one for cataract surgery
+  - {id: NCT04632784, why: "phakic lens: it goes in front of the natural lens, not a cataract lens"}
+  - {id: NCT07291739, why: "phakic lens: it goes in front of the natural lens, not a cataract lens"}
+  - {id: NCT04984590, why: "add-on lens for an eye that already had cataract surgery"}
+  - {id: NCT06625749, why: "add-on lens for an eye that already had cataract surgery"}
+  # Withdrawn: nobody took part
+  - {id: NCT04054427, why: "withdrawn before anyone took part"}
+  - {id: NCT04800016, why: "withdrawn before anyone took part"}
+  - {id: NCT06541795, why: "withdrawn before anyone took part"}
+  # Older lenses we do not track
+  - {id: NCT04755231, why: "post-market study of AcrySof IQ PanOptix, an older lens we do not track"}
+  - {id: NCT06166901, why: "post-market study of AcrySof IQ PanOptix, an older lens we do not track"}
+  - {id: NCT04954898, why: "post-market study of TECNIS ZMT, an older lens we do not track"}
+  - {id: NCT05053399, why: "study of TECNIS Symfony Toric, an older lens we do not track"}
+  # Sold outside the US only. The spec picks "US first" (open question 3).
+  - {id: NCT04874376, why: "ISOPURE: post-market study outside the US; no US trial or approval"}
+  - {id: NCT05235139, why: "ISOPURE: post-market study outside the US; no US trial or approval"}
+  - {id: NCT05875922, why: "ISOPURE: post-market study outside the US; no US trial or approval"}
+  - {id: NCT05504343, why: "Intensity SL: sold outside the US (see NCT06084169); no US trial or approval"}
+  - {id: NCT06084169, why: "Intensity SL: post-market study outside the US; no US trial or approval"}
+  - {id: NCT07232615, why: "Optiflex TRIO: called commercially available; trial outside the US only"}
+  - {id: NCT04884178, why: "post-market study outside the US; the record does not name the lens"}
+  # Plain monofocal and toric lenses. The page covers these in
+  # "What surgeons use today", not in the lens table.
+  - {id: NCT07502456, why: "Clareon TruPlus: plain monofocal and toric lens"}
+  - {id: NCT07650201, why: "KI-362-US1: plain monofocal lens"}
+  - {id: NCT04744467, why: "PODEYE TORIC: plain monofocal toric lens"}
+  - {id: NCT04778501, why: "PODEYE TORIC: plain monofocal toric lens"}
+  - {id: NCT04866719, why: "PODEYE TORIC: plain monofocal toric lens"}
+  - {id: NCT04987216, why: "PODEYE TORIC: plain monofocal toric lens"}
+  - {id: NCT06399211, why: "PODEYE TORIC: plain monofocal toric lens"}
+  - {id: NCT05255029, why: "POD T 49P: plain monofocal toric lens"}
+  - {id: NCT06285695, why: "Clareon Toric: plain monofocal toric lens"}
+  - {id: NCT06428955, why: "CT LUCIA 621P: plain monofocal lens"}
+  - {id: NCT07471295, why: "Zeiss monofocal toric lens"}
+  - {id: NCT06479148, why: "enVista Aspire: plain monofocal lens"}
+  - {id: NCT06594185, why: "enVista Aspire: plain monofocal and toric lens"}
+  - {id: NCT05776095, why: "Eyedeal PX65AS1: aspheric lens; the record names no extra focus range"}
+  - {id: NCT06223113, why: "Eyenable PA60AS1: the record names no extra focus range"}
+  - {id: NCT05090787, why: "withdrawn before anyone took part"}
+  # The record does not name the lens
+  - {id: NCT04907500, why: "Zeiss lens that the record does not name or describe"}
+  - {id: NCT05201027, why: "Zeiss trifocal that the record does not name"}
+  - {id: NCT06247683, why: "Zeiss trifocal that the record does not name"}
+
+fda:
+  # Same lens: power range, labels, shelf life, packaging, injectors
+  - {id: P030002 S039, why: "Trulign Toric, an older lens we do not track; label adds study results"}
+  - {id: P060011 S036, why: "packaging and instructions for preloaded Rayner lenses; no new lens"}
+  - {id: P060011 S037, why: "new coating site and longer shelf life for the RayOne injector; no new lens"}
+  - {id: P080004 S036, why: "new Hoya injector; no new lens"}
+  - {id: P090022 S047, why: "new vial stopper for Softec lenses; no new lens"}
+  - {id: P100016 S016, why: "injector change for CT LUCIA 621P; no new lens"}
+  - {id: P100016 S017, why: "longer shelf life for CT LUCIA 621P; no new lens"}
+  - {id: P190018 S009, why: "wider power range and a preloaded toric version of Clareon PanOptix; same lens"}
+  - {id: P190018 S027, why: "wider power range for Clareon Vivity; same lens"}
+  - {id: P190018 S030, why: "Clareon PanOptix Pro in a lens case and preloaded; same lens as S029"}
+  - {id: P190018 S038, why: "wider power range for Clareon monofocal and toric lenses; no new lens"}
+  - {id: P190018 S046, why: "more toric powers for Clareon Vivity Toric; same lens"}
+  - {id: P190018 S048, why: "packaging and shelf life for AcrySof and Clareon lenses; no new lens"}
+  - {id: P190018 S051, why: "packaging and shelf life for Clareon lenses; no new lens"}
+  - {id: P200020 S010, why: "new vial stopper for ClearView 3; same lens"}
+  - {id: P200020 S011, why: "wider power range for ClearView 3; same lens"}
+  - {id: P210005 S003, why: "longer shelf life for IC-8 Apthera; same lens"}
+  - {id: P210005 S007, why: "label adds post-approval study results; same lens"}
+  - {id: P210005 S011, why: "new address block in the label; same lens"}
+  - {id: P240005 S005, why: "new A-constant in the label; same lens"}
+  - {id: P240038 S003, why: "longer shelf life for FineVision HP; same lens"}
+  - {id: P910056 S054, why: "new packaging for enVista monofocal lenses; no new lens"}
+  - {id: P930014 S136, why: "wider power range for AcrySof IQ Vivity; same lens"}
+  - {id: P930014 S161, why: "packaging and shelf life for AcrySof and Clareon lenses; no new lens"}
+  - {id: P980040 S161, why: "TECNIS Symfony, an older lens we do not track; label adds study results"}
+  - {id: P980040 S163, why: "endotoxin limit for preloaded TECNIS lenses; no new lens"}
+  - {id: P980040 S170, why: "stronger warnings in TECNIS injector instructions; no new lens"}
+  - {id: P980040 S174, why: "endotoxin limit for preloaded TECNIS Odyssey; same lens"}
+  - {id: P980040 S182, why: "TECNIS Eyhance Toric II in SmartLOAD packaging; same lens"}
+  # Plain monofocal and toric lenses (see the note under trials)
+  - {id: P190018 S047, why: "Clareon TruPlus: plain monofocal and toric lens"}
+  - {id: P100016 S008, why: "CT LUCIA 611P: earlier model of the CT LUCIA monofocal"}
+  - {id: P100016 S009, why: "CT LUCIA 621P: plain monofocal lens"}
+  - {id: P910056 S051, why: "enVista Aspire: plain monofocal and toric lens; new lens material"}
+  - {id: P060011 S026, why: "RayOne Spheric: the record names no extra focus range"}
+  - {id: P200020 S013, why: "ClearView HD: ClearView 3 haptics with the Softec HD optic (a standard lens)"}
+  # Light Adjustable Lens (P160055): device, software and label changes. LAL+ is S024, in rxsight-lal.
+  - {id: P160055 S002, why: "post-approval study plan and small lens and device changes; same lens"}
+  - {id: P160055 S005, why: "light delivery device updates (camera, barcode, alignment aid); same lens"}
+  - {id: P160055 S008, why: "more coupling agents and UV glasses for treatment; same lens"}
+  - {id: P160055 S011, why: "light delivery device software; same lens"}
+  - {id: P160055 S015, why: "light delivery device changes and a wider power range; same lens"}
+  - {id: P160055 S016, why: "label adds an insertion device; same lens"}
+  - {id: P160055 S022, why: "smaller light delivery device and new software; same lens"}
+  - {id: P160055 S025, why: "light delivery device software; same lens"}
+  - {id: P160055 S028, why: "light delivery device software; same lens"}
+  - {id: P160055 S033, why: "light delivery device software; same lens"}
+  - {id: P160055 S034, why: "light delivery device software; same lens"}
+  - {id: P160055 S038, why: "wider power range for LAL+; same lens"}
+  - {id: P160055 S039, why: "light delivery device software; same lens"}
+  - {id: P160055 S040, why: "light delivery device software; same lens"}
+  - {id: P160055 S041, why: "new A-constant in the label; same lens"}
+  - {id: P160055 S042, why: "light delivery device software; same lens"}
+  - {id: P160055 S043, why: "wider power range for LAL; same lens"}
+  - {id: P160055 S044, why: "light delivery device software; same lens"}
+  - {id: P160055 S045, why: "label adds post-approval study results; same lens"}
+  - {id: P160055 S046, why: "small optical change inside the light delivery device; same lens"}
+  - {id: P160055 S052, why: "light delivery device software; same lens"}
+  - {id: P160055 S054, why: "label reorganized and updated; same lens"}
+  - {id: P160055 S055, why: "sterilization process change; same lens"}
+  - {id: P160055 S056, why: "light delivery device software; same lens"}
+  - {id: P160055 S057, why: "alignment aid now uses a machine-learning lens finder; same lens"}

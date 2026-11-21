@@ -1,0 +1,17 @@
+id: lensgen-juvene
+name: Juvene
+company: LensGen
+group: changes
+type: Accommodating
+stage: early
+status: stalled
+availability: Unknown
+latest:
+  date: 2023-03-09
+  text: Last update of the trial record. It still says the trial has not started.
+  evidence: company
+trials: [NCT05364983]
+sources:
+  - {url: "https://clinicaltrials.gov/study/NCT05364983", read: 2026-11-21}
+  - {url: "https://crstoday.com/articles/aug-2024/update-on-accommodating-iols", read: 2026-11-21}
+reviewed: 2026-11-21

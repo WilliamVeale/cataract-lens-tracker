@@ -1,0 +1,22 @@
+id: clareon-panoptix-pro
+name: Clareon PanOptix Pro
+code_names: [PXYWT0]
+company: Alcon
+group: fixed
+type: Trifocal
+stage: approved-us
+status: approved
+availability: US now
+latest:
+  date: 2023-12-18
+  text: The FDA approved the lens as a small optical change to Clareon PanOptix.
+  evidence: regulator
+trials: [NCT06400745, NCT06401551, NCT07161635]
+fda:
+  - {pma: P190018, supplement: S029, date: 2023-12-18}
+sources:
+  - {url: "https://api.fda.gov/device/pma.json?search=pma_number%3AP190018+AND+supplement_number%3AS029", read: 2026-11-21}
+  - {url: "https://clinicaltrials.gov/study/NCT06400745", read: 2026-11-21}
+  - {url: "https://clinicaltrials.gov/study/NCT06401551", read: 2026-11-21}
+  - {url: "https://clinicaltrials.gov/study/NCT07161635", read: 2026-11-21}
+reviewed: 2026-11-21

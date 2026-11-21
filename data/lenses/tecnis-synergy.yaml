@@ -1,0 +1,21 @@
+id: tecnis-synergy
+name: TECNIS Synergy
+code_names: [ZFR00V]
+company: Johnson & Johnson Surgical Vision
+group: fixed
+type: Multifocal
+stage: approved-us
+status: approved
+availability: US now
+latest:
+  date: 2021-04-28
+  text: The FDA approved the lens and its toric models.
+  evidence: regulator
+trials: [NCT05090826, NCT05396599]
+fda:
+  - {pma: P980040, supplement: S124, date: 2021-04-28}
+sources:
+  - {url: "https://api.fda.gov/device/pma.json?search=pma_number%3AP980040+AND+supplement_number%3AS124", read: 2026-11-21}
+  - {url: "https://clinicaltrials.gov/study/NCT05090826", read: 2026-11-21}
+  - {url: "https://clinicaltrials.gov/study/NCT05396599", read: 2026-11-21}
+reviewed: 2026-11-21

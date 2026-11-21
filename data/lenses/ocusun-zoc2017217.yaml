@@ -1,0 +1,17 @@
+id: ocusun-zoc2017217
+name: ZOC2017217
+code_names: [ZOC2017217]
+company: Ocusun Ophthalmic Pharmaceutical
+group: no-surgery
+type: Eye drug for cataract, used twice a day
+stage: early
+status: active
+availability: Unknown
+latest:
+  date: 2026-02-10
+  text: A small pilot trial in the US started.
+  evidence: company
+trials: [NCT07395986]
+sources:
+  - {url: "https://clinicaltrials.gov/study/NCT07395986", read: 2026-11-21}
+reviewed: 2026-11-21

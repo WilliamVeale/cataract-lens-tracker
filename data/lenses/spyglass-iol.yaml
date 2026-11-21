@@ -1,0 +1,19 @@
+id: spyglass-iol
+name: SpyGlass IOL with bimatoprost implant
+company: SpyGlass Pharma
+group: fixed
+type: Lens that holds a glaucoma drug
+stage: pivotal
+status: active
+availability: Unknown
+latest:
+  date: 2025-10-15
+  text: The first of two US trials (Rhine) started.
+  evidence: company
+trials: [NCT07218783, NCT07218796, NCT06120842, NCT07154797]
+sources:
+  - {url: "https://clinicaltrials.gov/study/NCT07218783", read: 2026-11-21}
+  - {url: "https://clinicaltrials.gov/study/NCT07218796", read: 2026-11-21}
+  - {url: "https://clinicaltrials.gov/study/NCT06120842", read: 2026-11-21}
+  - {url: "https://clinicaltrials.gov/study/NCT07154797", read: 2026-11-21}
+reviewed: 2026-11-21

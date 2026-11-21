@@ -1,0 +1,19 @@
+id: ic-8-apthera
+name: IC-8 Apthera
+company: AcuFocus
+group: fixed
+type: EDOF
+stage: approved-us
+status: approved
+availability: US now
+latest:
+  date: 2022-07-22
+  text: The FDA approved the lens for one eye only, to give monovision.
+  evidence: regulator
+trials: [NCT05574270]
+fda:
+  - {pma: P210005, date: 2022-07-22}
+sources:
+  - {url: "https://api.fda.gov/device/pma.json?search=pma_number%3AP210005+AND+supplement_number%3A%22%22", read: 2026-11-21}
+  - {url: "https://clinicaltrials.gov/study/NCT05574270", read: 2026-11-21}
+reviewed: 2026-11-21

@@ -1,0 +1,21 @@
+id: tecnis-puresee
+name: TECNIS PureSee
+code_names: [DEN00V]
+company: Johnson & Johnson Surgical Vision
+group: fixed
+type: EDOF
+stage: approved-us
+status: approved
+availability: US now
+latest:
+  date: 2026-03-11
+  text: The FDA approved the lens and its toric models.
+  evidence: regulator
+trials: [NCT05574959, NCT06377514]
+fda:
+  - {pma: P980040, supplement: S176, date: 2026-03-11}
+sources:
+  - {url: "https://api.fda.gov/device/pma.json?search=pma_number%3AP980040+AND+supplement_number%3AS176", read: 2026-11-21}
+  - {url: "https://clinicaltrials.gov/study/NCT05574959", read: 2026-11-21}
+  - {url: "https://clinicaltrials.gov/study/NCT06377514", read: 2026-11-21}
+reviewed: 2026-11-21

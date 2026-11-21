@@ -1,0 +1,17 @@
+id: artis-symbiose
+name: Artis Symbiose
+company: Cristalens
+group: fixed
+type: Multifocal
+stage: early
+status: stalled
+availability: Unknown
+latest:
+  date: 2024-03-25
+  text: Last update of the trial records. ClinicalTrials.gov now shows their status as unknown.
+  evidence: company
+trials: [NCT06323915, NCT06327347]
+sources:
+  - {url: "https://clinicaltrials.gov/study/NCT06323915", read: 2026-11-21}
+  - {url: "https://clinicaltrials.gov/study/NCT06327347", read: 2026-11-21}
+reviewed: 2026-11-21

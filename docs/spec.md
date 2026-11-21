@@ -282,6 +282,10 @@ choice.
 Facts below come from the two APIs, read 2026-11-19. They are a start,
 not a full list. All need a second check before launch.
 
+Checked again 2026-11-21. The record is now `data/lenses/`. Some rows
+below were wrong (for example, AT ELANA 841P is a trifocal, and the FDA
+approved Clareon Vivity Pro on 2026-10-30). The files have the fixes.
+
 ### Approved in the US (openFDA PMA records)
 
 | Lens | Company | Type | FDA record | Date |
@@ -343,7 +347,9 @@ No registered trial for lanosterol drops was found.
 
 These came from memory, not from a source. Do not publish them before a
 check: Atia Vision OmniVu, JelliSee, Ocumetics Bionic Lens, VP1-001
-(ViewPoint Therapeutics), LAL+ (RxSight), N-acetylcarnosine drops.
+(ViewPoint Therapeutics), N-acetylcarnosine drops.
+
+LAL+ (RxSight) is checked: FDA P160055 S024, in `rxsight-lal`.
 
 ## Open questions
 
@@ -371,5 +377,6 @@ check: Atia Vision OmniVu, JelliSee, Ocumetics Bionic Lens, VP1-001
 2. Done 2026-11-21: move this spec here. The old spec folder in the
    notebook repo is now a one-line pointer.
 3. Done 2026-11-21: the refresh script and the four build checks.
-4. Fill the YAML files from the starter list. Check each one.
+4. Done 2026-11-21: the facts in the YAML files, each one checked.
+   A person still writes How it works, Summary and Trade-offs.
 5. Build the page last.

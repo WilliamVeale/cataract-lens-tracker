@@ -1,0 +1,17 @@
+id: omega-refractive-capsule
+name: Omega Refractive Capsule
+code_names: [Model VI]
+company: Omega Ophthalmics
+group: fixed
+type: Lens holder (capsule)
+stage: early
+status: stalled
+availability: Unknown
+latest:
+  date: 2023-03-29
+  text: Last update of the trial record. ClinicalTrials.gov now shows its status as unknown.
+  evidence: company
+trials: [NCT04574115]
+sources:
+  - {url: "https://clinicaltrials.gov/study/NCT04574115", read: 2026-11-21}
+reviewed: 2026-11-21

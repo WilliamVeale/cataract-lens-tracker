@@ -1,0 +1,16 @@
+id: at-lara-829mp
+name: AT LARA 829MP
+company: Carl Zeiss Meditec
+group: fixed
+type: EDOF
+stage: early
+status: active
+availability: Unknown
+latest:
+  date: 2026-07-27
+  text: The trial in four European countries finished.
+  evidence: company
+trials: [NCT07092020]
+sources:
+  - {url: "https://clinicaltrials.gov/study/NCT07092020", read: 2026-11-21}
+reviewed: 2026-11-21

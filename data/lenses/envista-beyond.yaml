@@ -1,0 +1,17 @@
+id: envista-beyond
+name: enVista Beyond
+code_names: [EY]
+company: Bausch & Lomb
+group: fixed
+type: EDOF
+stage: pivotal
+status: active
+availability: Unknown
+latest:
+  date: 2026-06-11
+  text: The US trial finished.
+  evidence: company
+trials: [NCT06333015]
+sources:
+  - {url: "https://clinicaltrials.gov/study/NCT06333015", read: 2026-11-21}
+reviewed: 2026-11-21

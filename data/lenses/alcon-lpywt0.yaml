@@ -1,0 +1,17 @@
+id: alcon-lpywt0
+name: LPYWT0
+code_names: [LPYWT0]
+company: Alcon
+group: fixed
+type: Trifocal
+stage: early
+status: active
+availability: Unknown
+latest:
+  date: 2026-10-09
+  text: The trial started in Australia, India and the Philippines.
+  evidence: company
+trials: [NCT07587138]
+sources:
+  - {url: "https://clinicaltrials.gov/study/NCT07587138", read: 2026-11-21}
+reviewed: 2026-11-21
