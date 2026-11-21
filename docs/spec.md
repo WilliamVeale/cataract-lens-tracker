@@ -191,6 +191,10 @@ availability: "US now"
 how_it_works: "..."
 summary: "..."
 trade_offs: "..."
+results:                # every result number goes here, with its tag
+  - text: "..."
+    evidence: paper     # regulator | paper | company
+    source: "https://..."   # one of the urls in sources
 latest:
   date: 2026-03-11
   text: "FDA approved the lens and its toric models."
@@ -209,6 +213,17 @@ Rules the build must enforce. The build fails if one is broken:
 3. `stage: approved-us` needs an `fda` record that the API confirms.
 4. Every result number has an evidence tag.
 
+The checks are `npm run check` (`scripts/check.js`). The `prebuild`
+script runs them before every `npm run build`, so step 5 only needs to
+add the build. Rules 2 and 3 ask the live APIs. The file must also be
+valid (known keys, allowed values, `id` the same as the file name).
+
+How the build checks rule 4: a result number (a percent, a vision score
+like 20/25, diopters, "9 of 10", and so on) goes in `results` or in
+`latest`. Both carry an evidence tag. Summary, Trade-offs, How it works
+and "Where you can get it" must not hold one. The check finds these
+numbers by pattern, so a person still reads each change.
+
 ## How it stays up to date
 
 1. A script runs each week (GitHub Actions, on a timer).
@@ -223,6 +238,21 @@ Rules the build must enforce. The build fails if one is broken:
 
 The script updates facts only (status, dates, counts). A person writes
 the Summary and Trade-offs text.
+
+Files (made 2026-11-21):
+
+- `npm run refresh` (`scripts/refresh.js`), run by
+  `.github/workflows/refresh.yml`.
+- It writes `data/registry/trials.json`: status, dates, counts and
+  countries for each trial that an entry lists. The page reads trial
+  facts from this file. It never changes `data/lenses/`.
+- It writes `data/registry/unmatched.json`: search hits that no entry
+  lists. Add each one to an entry, or to `data/ignore.yaml` with a
+  reason. Then the refresh stops reporting it.
+- The FDA search: lens product codes, decisions from 2021-01-01, plus a
+  search by the name and code names of each entry. It keeps original
+  PMAs and supplements for a design or labeling change.
+- The refresh also reports trials that look stale.
 
 ## How it is built and hosted
 
@@ -340,6 +370,6 @@ check: Atia Vision OmniVu, JelliSee, Ocumetics Bionic Lens, VP1-001
 1. Make the repo (done 2026-11-21) and the agent box (laptop).
 2. Done 2026-11-21: move this spec here. The old spec folder in the
    notebook repo is now a one-line pointer.
-3. Next: write the refresh script and the four build checks first.
+3. Done 2026-11-21: the refresh script and the four build checks.
 4. Fill the YAML files from the starter list. Check each one.
 5. Build the page last.

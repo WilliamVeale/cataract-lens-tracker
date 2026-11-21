@@ -1,0 +1,59 @@
+# The weekly refresh. See docs/spec.md, "How it stays up to date".
+# It opens (or updates) one pull request. A person reads it and merges it.
+#
+# Needs: Settings > Actions > General > "Allow GitHub Actions to create
+# and approve pull requests".
+name: Weekly refresh
+
+on:
+  schedule:
+    - cron: '17 6 * * 1' # Monday, 06:17 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: refresh
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
+        with:
+          node-version-file: .node-version
+          cache: npm
+      - run: npm ci
+      # If last week's pull request is still open, take its unmatched.json,
+      # so a record keeps the "found" date of the week it first showed up.
+      # The script drops records that an entry or data/ignore.yaml now has.
+      # No bot branch yet: skip this step.
+      - name: Keep the "found" dates from an open refresh PR
+        run: |
+          if git fetch --depth=1 origin bot/weekly-refresh; then
+            git restore --source=FETCH_HEAD --worktree -- data/registry/unmatched.json || true
+          fi
+      - name: Read both APIs and write data/registry/
+        run: npm run refresh -- --report "$RUNNER_TEMP/report.md"
+        env:
+          OPENFDA_API_KEY: ${{ secrets.OPENFDA_API_KEY }}
+      - name: Open or update the pull request
+        uses: peter-evans/create-pull-request@3ffccacd46053766916f087ce41d627c0b8cf2d1 # v8
+        with:
+          branch: bot/weekly-refresh
+          delete-branch: true
+          add-paths: data/registry/
+          commit-message: Weekly data refresh
+          title: Weekly data refresh
+          body-path: ${{ runner.temp }}/report.md
+      # A pull request made by this workflow does not start check.yml,
+      # so run the checks here. A failure shows on the workflow run.
+      - name: The four build checks
+        run: npm run check
+        env:
+          OPENFDA_API_KEY: ${{ secrets.OPENFDA_API_KEY }}

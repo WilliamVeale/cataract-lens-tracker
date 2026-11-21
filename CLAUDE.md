@@ -10,9 +10,15 @@ the task needs, not all of it.
 
 ## Status (2026-11-21)
 
-No code yet. Repo made, spec moved here from the notebook repo.
-Next: spec "First steps" step 3, the refresh script and the four build
-checks. Then the YAML data (step 4). The page comes last (step 5).
+Step 3 is done: the four build checks and the weekly refresh.
+Next: the YAML data (step 4). The page comes last (step 5).
+
+## Commands
+
+- `npm test`: unit tests. No network.
+- `npm run check`: the build checks. They ask the live APIs.
+- `npm run refresh -- --report report.md`: the weekly refresh.
+- Both take `--data <dir>`, to test on a copy of `data/`.
 
 ## Rules that are easy to break
 
@@ -23,4 +29,5 @@ checks. Then the YAML data (step 4). The page comes last (step 5).
   confirms it.
 - The script changes facts only (status, dates, counts). A person writes
   Summary and Trade-offs.
+- `data/registry/` belongs to the refresh script. Do not edit it by hand.
 - Code is MIT. Data and text in `data/` are CC BY 4.0.

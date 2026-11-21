@@ -1,0 +1,12 @@
+# Records that the weekly refresh found, but that are not lenses we track
+# (glaucoma stents, eye drops, contact lenses, paperwork supplements).
+# The refresh does not report an id that is in this file.
+# Each item needs an "id" and a reason ("why"). Examples:
+#
+# trials:
+#   - {id: NCT00000000, why: "glaucoma stent, not a lens"}
+# fda:
+#   - {id: P000000 S000, why: "new inserter only, same lens"}
+
+trials: []
+fda: []

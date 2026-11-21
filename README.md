@@ -25,6 +25,14 @@ checks every change before it goes live.
 
 Open a pull request or an issue. Give a source link for each fact.
 
+To run the checks on your copy (Node 22 or newer):
+
+```bash
+npm ci
+npm test
+npm run check
+```
+
 ## License
 
 - Code (scripts, site): MIT. See [LICENSE](LICENSE).
