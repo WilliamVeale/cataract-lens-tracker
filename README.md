@@ -9,7 +9,7 @@ lens is an IOL (intraocular lens): the plastic lens a surgeon puts in the
 eye after the cloudy lens comes out. Each row shows how far a lens has got:
 in the lab, in a trial, or approved. Each fact links to its source.
 
-Status: the page is built, but it is not online yet. The plan is in
+The page: <https://cataract-lens.pages.dev>. The plan is in
 [docs/spec.md](docs/spec.md).
 
 ## Where the data comes from
@@ -42,7 +42,8 @@ The page text (not the lens facts) is in `data/site.yaml`.
 
 ## Hosting
 
-Cloudflare Pages, free plan. Settings for the project:
+Cloudflare Pages, free plan. Project `cataract-lens`. Each push to `main`
+builds the page again. Settings for the project:
 
 - Build command: `npm run build`
 - Build output directory: `dist`

@@ -385,3 +385,5 @@ LAL+ (RxSight) is checked: FDA P160055 S024, in `rxsight-lal`.
    A person still writes How it works, Summary and Trade-offs.
 5. Done 2026-11-21: the page (`src/pages/index.astro`). Its text is in
    `data/site.yaml`. Empty texts there are for a person to write.
+6. Done 2026-11-22: the page is online at
+   <https://cataract-lens.pages.dev> (Cloudflare Pages).

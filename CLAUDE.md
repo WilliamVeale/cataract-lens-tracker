@@ -8,7 +8,7 @@ A one-page static site that lists new cataract lenses (IOLs) and their
 stage: lab, trial, or approved. The plan is `docs/spec.md`. Read the part
 the task needs, not all of it.
 
-## Status (2026-11-21)
+## Status (2026-11-22)
 
 Step 3 is done: the four build checks and the weekly refresh (PR #1).
 Step 4 facts are done: 41 files in `data/lenses/`, and every refresh hit
@@ -19,9 +19,11 @@ through `scripts/lib/site.js`. Page text is in `data/site.yaml`. Rule 5
 of the checks: no drug is approved to treat a cataract (openFDA drug
 labels). The owner checked the layout in a browser on 2026-11-21
 (`npm run dev`).
+Online since 2026-11-22: <https://cataract-lens.pages.dev> (Cloudflare
+Pages project `cataract-lens`; each push to `main` builds it again).
 Next: a person writes `how_it_works`, `summary` and `trade_offs` in each
 lens file, and the empty texts in `data/site.yaml` (terms, "What
-surgeons use today"). Then connect Cloudflare Pages (see README).
+surgeons use today").
 
 How the refresh hits were sorted. Use the same rules for new hits:
 
