@@ -11,6 +11,8 @@ const site = {
   tagline: 'A tagline.',
   not_advice: 'Not medical advice.',
   no_drug_approved: 'No drug is approved.',
+  pipeline: { title: 'In the pipeline', about: 'Not on sale.' },
+  available: { title: 'Approved and available now', about: '' },
   groups: {
     fixed: { label: 'Fixed focus', about: 'Does not move.' },
     changes: { label: 'Changes focus', about: '' },
@@ -53,9 +55,38 @@ test('buildSite orders by group, then stage, then name, and counts each stage', 
   assert.deepEqual(s.groups[0].entries.map((e) => e.id), ['zeta', 'Alpha', 'beta']);
   assert.equal(s.groups[2].note, 'No drug is approved.');
   assert.equal(s.groups[0].note, '');
-  assert.deepEqual(s.counts.map((c) => c.count), [1, 0, 0, 3, 0]);
+  // zeta is approved but not on sale ("Unknown"), so it stays in the pipeline.
+  assert.deepEqual(s.counts.map((c) => [c.stage, c.count]), [['approved-us', 1], ['pivotal', 0], ['early', 3], ['lab', 0]]);
+  assert.equal(s.pipeline.total, 4);
+  assert.equal(s.available.total, 0);
   assert.equal(s.total, 4);
   assert.equal(s.lastUpdated, '2026-11-20');
+});
+
+test('buildSite moves a lens that is approved and on sale in the US to its own list', () => {
+  const s = buildSite({
+    site,
+    registry: {},
+    entries: [
+      entry('vivity', {
+        stage: 'approved-us', status: 'approved', availability: 'US now',
+        fda: [{ pma: 'P190018', supplement: 'S050', date: '2026-10-30' }, { pma: 'P190018', supplement: 'S013', date: '2022-01-26' }],
+      }),
+      entry('Lal', { group: 'changes', stage: 'approved-us', status: 'approved', availability: 'US now' }),
+      entry('soon', { stage: 'approved-us', status: 'approved', availability: '2027' }),
+      entry('trial', { stage: 'pivotal' }),
+    ],
+  });
+  assert.deepEqual(s.groups.flatMap((g) => g.entries.map((e) => e.id)), ['soon', 'trial']);
+  assert.deepEqual(s.counts.map((c) => [c.stage, c.count]), [['approved-us', 1], ['pivotal', 1], ['early', 0], ['lab', 0]]);
+  assert.equal(s.pipeline.total, 2);
+  assert.equal(s.pipeline.about, 'Not on sale.');
+  assert.equal(s.available.title, 'Approved and available now');
+  assert.equal(s.available.total, 2);
+  assert.deepEqual(s.available.groups.map((g) => [g.key, g.entries.map((e) => e.id)]), [['fixed', ['vivity']], ['changes', ['Lal']]]);
+  assert.equal(s.available.groups[0].entries[0].firstFda, '2022-01-26');
+  assert.equal(s.available.groups[1].entries[0].firstFda, '');
+  assert.equal(s.total, 4);
 });
 
 test('buildSite hides empty texts, and tags evidence with its label', () => {
@@ -103,8 +134,9 @@ test('buildSite reads trial facts from the registry, and FDA links from the reco
   assert.match(f.url, /^https:\/\/api\.fda\.gov\/device\/pma\.json\?search=/);
 });
 
-test('buildSite stops on a site.yaml without the no-drug text', () => {
+test('buildSite stops on a site.yaml without the no-drug text or a list title', () => {
   assert.throws(() => buildSite({ site: { ...site, no_drug_approved: '' }, entries: [], registry: {} }), /no_drug_approved/);
+  assert.throws(() => buildSite({ site: { ...site, available: {} }, entries: [], registry: {} }), /available\.title/);
 });
 
 test('sourceLabel names the registry and FDA links', () => {

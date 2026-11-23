@@ -21,6 +21,16 @@ not_advice: >-
 # fails until a person checks it and changes this text.
 no_drug_approved: The FDA has not approved any drug or eye drop to treat a cataract.
 
+# The two lists on the page. The pipeline is the main one. A lens moves to
+# "available" when its stage is approved-us and "Where you can get it" is
+# "US now". An approved lens that is not on sale yet stays in the pipeline.
+pipeline:
+  title: In the pipeline
+  about: Not on sale in the US. Each one shows how far it has got.
+available:
+  title: Approved and available now
+  about: The FDA approved these lenses, and a US surgeon can use them now.
+
 groups:
   fixed:
     label: Fixed focus

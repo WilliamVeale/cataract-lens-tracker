@@ -84,6 +84,20 @@ Lens, Company, Stage, Type, Where you can get it, Status.
 "Europe now", a year range, or "Unknown". Show an estimate only when a
 source gives one. Do not guess a year.
 
+### Two lists (owner's choice, 2026-11-23)
+
+The page tracks new lenses, so the pipeline comes first.
+
+- **In the pipeline**: the main list, with the stage counts, the filter
+  buttons and the columns above.
+- **Approved and available now**: each lens with stage `approved-us`
+  and "Where you can get it" = "US now". Columns: Lens, Company, Type,
+  FDA approved (the first date in its `fda` list). No filter buttons.
+
+An approved lens that is not on sale yet stays in the pipeline. The
+approval date is not the launch date. The code is `isAvailableNow` in
+`scripts/lib/site.js`. The list titles are in `data/site.yaml`.
+
 ### Detail panel
 
 - **How it works**: one plain sentence.

@@ -19,6 +19,10 @@ through `scripts/lib/site.js`. Page text is in `data/site.yaml`. Rule 5
 of the checks: no drug is approved to treat a cataract (openFDA drug
 labels). The owner checked the layout in a browser on 2026-11-21
 (`npm run dev`).
+The page has two lists (2026-11-23): "In the pipeline" first, then
+"Approved and available now". A lens moves to the second list when its
+stage is `approved-us` and `availability` is "US now" (spec, "Two
+lists").
 Online since 2026-11-22: <https://cataract-lens.pages.dev> (Cloudflare
 Pages project `cataract-lens`; each push to `main` builds it again).
 Next: a person writes `how_it_works`, `summary` and `trade_offs` in each

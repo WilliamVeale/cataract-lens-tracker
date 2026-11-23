@@ -1,0 +1,86 @@
+---
+// One entry in a table: a row (its name, then the cells in the slot) and
+// the detail panel under it. The script on the page opens and closes the panel.
+import { h, link, tag } from './ui.js';
+
+const { e, colspan } = Astro.props;
+---
+<tr data-row class="cursor-pointer border-t border-zinc-200 align-top hover:bg-zinc-50 dark:border-zinc-800 dark:hover:bg-zinc-900">
+  <td class="py-2 pr-3">
+    <button type="button" aria-expanded="true" aria-controls={`d-${e.id}`} class="text-left font-medium underline-offset-2 hover:underline">
+      {e.name}
+    </button>
+    <span class="block text-xs text-zinc-500 sm:hidden dark:text-zinc-400">{e.company}</span>
+  </td>
+  <slot />
+</tr>
+<tr id={`d-${e.id}`} data-panel>
+  <td colspan={colspan} class="pb-4">
+    <div class="grid gap-4 rounded-lg bg-zinc-50 p-4 sm:grid-cols-2 dark:bg-zinc-900">
+      <div class="space-y-3">
+        <dl class="grid grid-cols-[max-content_1fr] gap-x-3 gap-y-1">
+          <dt class="text-zinc-500 dark:text-zinc-400">Company</dt><dd>{e.company}</dd>
+          <dt class="text-zinc-500 dark:text-zinc-400">Type</dt><dd>{e.type || 'Not stated in the sources'}</dd>
+          <dt class="text-zinc-500 dark:text-zinc-400">Where</dt><dd>{e.availability}</dd>
+          {e.codeNames.length > 0 && <><dt class="text-zinc-500 dark:text-zinc-400">Codes</dt><dd>{e.codeNames.join(', ')}</dd></>}
+        </dl>
+        {e.howItWorks && <div><h3 class={h}>How it works</h3><p>{e.howItWorks}</p></div>}
+        {e.summary && <div><h3 class={h}>Summary</h3><p>{e.summary}</p></div>}
+        {e.tradeOffs && <div><h3 class={h}>Trade-offs</h3><p>{e.tradeOffs}</p></div>}
+        {!e.summary && !e.tradeOffs && (
+          <p class="text-zinc-500 italic dark:text-zinc-400">Summary and trade-offs: not written yet.</p>
+        )}
+        {e.results.length > 0 && (
+          <div>
+            <h3 class={h}>Results</h3>
+            <ul class="list-disc space-y-1 pl-5">
+              {e.results.map((r) => (
+                <li>{r.text}<span class={tag}>{r.evidence}</span> <a class={link} href={r.source}>source</a></li>
+              ))}
+            </ul>
+          </div>
+        )}
+        {e.latest && (
+          <div>
+            <h3 class={h}>Latest</h3>
+            <p><time datetime={e.latest.date}>{e.latest.date}</time>: {e.latest.text}<span class={tag}>{e.latest.evidence}</span></p>
+          </div>
+        )}
+      </div>
+      <div class="space-y-3">
+        {e.trials.length > 0 && (
+          <div>
+            <h3 class={h}>Trials</h3>
+            <ul class="space-y-2">
+              {e.trials.map((t) => (
+                <li>
+                  <a class={link} href={t.url}>{t.nct}</a>: {t.status}
+                  <span class="block text-xs text-zinc-600 dark:text-zinc-400">
+                    {[t.people, t.countries, t.start && `start ${t.start}`, t.end && `end ${t.end}`].filter(Boolean).join(' · ')}
+                  </span>
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
+        {e.fda.length > 0 && (
+          <div>
+            <h3 class={h}>FDA approvals</h3>
+            <ul class="space-y-1">
+              {e.fda.map((f) => <li><a class={link} href={f.url}>{f.key}</a>, <time datetime={f.date}>{f.date}</time></li>)}
+            </ul>
+          </div>
+        )}
+        <div>
+          <h3 class={h}>Sources</h3>
+          <ul class="space-y-1">
+            {e.sources.map((src) => (
+              <li><a class={link} href={src.url}>{src.label}</a> <span class="text-xs text-zinc-500 dark:text-zinc-400">read {src.read}</span></li>
+            ))}
+          </ul>
+        </div>
+        {e.reviewed && <p class="text-xs text-zinc-500 dark:text-zinc-400">Last reviewed {e.reviewed}</p>}
+      </div>
+    </div>
+  </td>
+</tr>

@@ -88,42 +88,74 @@ function entryView(data, site, registry) {
   };
 }
 
+/** The "Where you can get it" text of a lens that a US patient can get now. */
+export const AVAILABLE_NOW = 'US now';
+
+/**
+ * True when the FDA approved the entry and it is on sale in the US now.
+ * An approval is not a launch: an approved lens that is not on sale yet
+ * stays in the pipeline.
+ */
+export const isAvailableNow = (v) => v.stage === 'approved-us' && v.availability === AVAILABLE_NOW;
+
+/** The date of the first FDA approval in the entry's list, or ''. */
+const firstFdaDate = (v) => v.fda.map((f) => f.date).filter(Boolean).sort()[0] ?? '';
+
 const byName = (a, b) => a.name.localeCompare(b.name, 'en', { sensitivity: 'base' });
 
 /**
- * Everything the page needs. Order: group, then stage, then name A to Z.
- * The order says how far a lens has got. It does not rank lenses.
+ * Everything the page needs. Two lists: the pipeline (the main list), and
+ * the lenses that are approved and on sale now. In each list the order is
+ * group, then stage, then name A to Z. The order says how far a lens has
+ * got. It does not rank lenses.
  */
 export function buildSite({ site, entries, registry }) {
   for (const key of ['title', 'not_advice', 'no_drug_approved']) {
     if (!isText(site?.[key])) throw new Error(`data/site.yaml: "${key}" is missing`);
   }
+  for (const key of ['pipeline', 'available']) {
+    if (!isText(site[key]?.title)) throw new Error(`data/site.yaml: ${key}.title is missing`);
+  }
   for (const g of GROUPS) if (!site.groups?.[g]) throw new Error(`data/site.yaml: groups.${g} is missing`);
   for (const s of STAGES) if (!site.stages?.[s]) throw new Error(`data/site.yaml: stages.${s} is missing`);
 
   const views = entries.map((d) => entryView(d, site, registry));
-  const groups = GROUPS.map((key) => ({
+  const available = views.filter(isAvailableNow).map((v) => ({ ...v, firstFda: firstFdaDate(v) }));
+  const pipeline = views.filter((v) => !isAvailableNow(v));
+  const byGroup = (list) => GROUPS.map((key) => ({
     key,
     label: site.groups[key].label,
     about: text(site.groups[key].about),
-    note: key === 'no-surgery' ? site.no_drug_approved.trim() : '',
-    entries: views
+    entries: list
       .filter((v) => v.group === key)
       .sort((a, b) => STAGES.indexOf(a.stage) - STAGES.indexOf(b.stage) || byName(a, b)),
   }));
+  const groups = byGroup(pipeline).map((g) => ({
+    ...g,
+    note: g.key === 'no-surgery' ? site.no_drug_approved.trim() : '',
+  }));
+  // An approved stage shows in the pipeline counts only when an approved
+  // entry is not on sale yet.
   const counts = STAGES.map((s) => ({
     stage: s,
     label: site.stages[s].label,
     about: text(site.stages[s].about),
-    count: views.filter((v) => v.stage === s).length,
-  }));
+    count: pipeline.filter((v) => v.stage === s).length,
+  })).filter((c) => c.count > 0 || !c.stage.startsWith('approved'));
   const reviewed = views.map((v) => v.reviewed).filter(Boolean).sort();
   return {
     title: site.title.trim(),
     tagline: text(site.tagline),
     notAdvice: site.not_advice.trim(),
+    pipeline: { title: site.pipeline.title.trim(), about: text(site.pipeline.about), total: pipeline.length },
     groups,
     counts,
+    available: {
+      title: site.available.title.trim(),
+      about: text(site.available.about),
+      total: available.length,
+      groups: byGroup(available).filter((g) => g.entries.length > 0),
+    },
     total: views.length,
     lastUpdated: reviewed.at(-1) ?? '',
     statuses: Object.entries(site.statuses ?? {})
