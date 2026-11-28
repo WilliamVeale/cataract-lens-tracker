@@ -23,7 +23,8 @@ The page has two lists (2026-11-23): "In the pipeline" first, then
 "Approved and available now". A lens moves to the second list when its
 stage is `approved-us` and `availability` is "US now" (spec, "Two
 lists").
-A "Dark mode" button is at the top (2026-11-28). Without a choice, the
+A light/dark toggle is at the top right (2026-11-28): a moon or sun
+icon, as on the hair loss site. Without a choice, the
 page follows the system setting. The choice is `data-theme` on `<html>`,
 saved in `localStorage` (`src/styles/global.css` has the `dark` variant).
 Online since 2026-11-22: <https://cataract-lens.pages.dev> (Cloudflare
